@@ -23,7 +23,7 @@
 #  Convierte una entrada transdcrita fonológicamente en serie de cv
 #  según sea consonante o vocal el tipo de segmento
 #
-#  La entrada es "paso_c0" del transcriptor fonológico
+#  El punto de partida es "paso_c0" del transcriptor fonológico
 
 ## sustituye vocales por V
 paso_c0 = "el keso se caco"
