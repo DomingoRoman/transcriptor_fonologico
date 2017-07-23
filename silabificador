@@ -26,7 +26,7 @@ o#!/usr/bin/env python
 #  El punto de partida es "paso_c0" del transcriptor fonológico
 
 ## sustituye vocales por V
-paso_c0 = "el keso se caco"
+paso_c0 = "derecos sedidos pol el gato de tulno"
 paso_c0va = paso_c0.replace("a","v")
 paso_c0ve = paso_c0va.replace("e","v")
 paso_c0vi = paso_c0ve.replace("i","v")
