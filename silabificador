@@ -55,4 +55,4 @@ paso_c18 = paso_c17.replace("c","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
 
-print(paso_c17)
+print(paso_c18)
