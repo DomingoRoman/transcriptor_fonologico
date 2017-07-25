@@ -36,4 +36,9 @@ print(lista_sec_cv, "....", largo_lista_sec_cv)
 
 for i in lista_sec_cv:
     print(i)
+    if i == "cvcv":
+        print("cv cv")
+    if i == "cvcvc":
+       print("cv cvc")
+    if i == ("")
 
