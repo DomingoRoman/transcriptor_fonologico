@@ -36,7 +36,6 @@ paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
 
 paso_dipt_ui = paso_tript_uei.replace("ui", "v0")
 paso_dipt_iu = paso_dipt_ui.replace("iu", "v0")
-
 paso_dipt_ai = paso_dipt_iu.replace("ai", "v0")
 paso_dipt_ei = paso_dipt_ai.replace("ei", "v0")
 paso_dipt_oi = paso_dipt_ei.replace("ei", "v0")
