@@ -72,7 +72,6 @@ paso_c14 = paso_c13.replace("s","c")
 paso_c15 = paso_c14.replace("t","c")
 paso_c16 = paso_c15.replace("ʝ","c")
 paso_c17 = paso_c16.replace("r","c")
-paso_c18 = paso_c17.replace("c","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
 print(paso_c18)
