@@ -35,6 +35,5 @@ largo_lista_sec_cv =len(lista_sec_cv)
 print(lista_sec_cv, "....", largo_lista_sec_cv)
 
 for i in lista_sec_cv:
-        print(i)
-        if i == "vc":
-            print("¿el?")
+    print(i)
+
