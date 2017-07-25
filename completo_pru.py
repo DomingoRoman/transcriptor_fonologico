@@ -98,7 +98,6 @@ paso_gi = paso_ge.replace("gui","gi")
 paso_rr1 = paso_gi.replace("rr","00")
 
 # sustituye casos de ERE
-
 paso_r1 = paso_rr1.replace("ar","aɾ")
 paso_r2 = paso_r1.replace("er","eɾ")
 paso_r3 = paso_r2.replace("ir","iɾ")
@@ -127,24 +126,15 @@ paso_2punt = paso_pcoma.replace(";","")
 # Escribe Ü como u
 paso_u_cre = paso_2punt.replace("ü", "u")
 
-# imprime resultado
-print(paso_u_cre)
-print(lista_palabras,":  ", n_palabras-1)
-#
-#
 #########################################
 # El siguiente paso cambia t͡∫ por un solo
 # caracter: c
 # para efectos de contar los fonemas
-
 paso_cuenta_fonemas = paso_u_cre.replace("t͡∫","c")
-
-print(paso_cuenta_fonemas)
-
 paso_cuenta_fonemas_1 = paso_cuenta_fonemas.replace(" ", "")
-print(paso_cuenta_fonemas_1)
+
 ene_de_fonemas = len(paso_cuenta_fonemas_1)
-print(ene_de_fonemas)
+
 #####################
 ######################
 ####
@@ -198,4 +188,9 @@ paso_c16 = paso_c15.replace("ʝ","c")
 paso_c17 = paso_c16.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
+print(paso_u_cre)
 print(paso_c17)
+print(paso_cuenta_fonemas)
+print(paso_cuenta_fonemas_1)
+print(lista_palabras,":  ", n_palabras-1)
+print(ene_de_fonemas)
