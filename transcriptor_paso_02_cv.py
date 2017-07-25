@@ -1,9 +1,9 @@
-o#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  secuenciador_cv.py
+#  pru2.py
 #  
-#  Copyright 2017 mapa <mapa@jules>
+#  Copyright 2017 Pedro Domingo Roman <historiadores@iMac-de-Pedro.local>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -20,14 +20,10 @@ o#!/usr/bin/env python
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
-#  Convierte una entrada transdcrita fonológicamente en serie de cv
-#  según sea consonante o vocal el tipo de segmento
-#
-#  El punto de partida es "paso_c0" del transcriptor fonológico
+#  
 
-## sustituye vocales por V
-paso_c0 = "derecos sediendos pol el gueito de tulno"
-## diptongos y triptongos
+paso_c0 = "derecos sediendos puel el gueito de tuelno"
+## triptongos
 
 paso_tript_uai = paso_c0.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
@@ -36,7 +32,24 @@ paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
 paso_tript_iau = paso_tript_uau.replace("iau", "0v0")
 paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
 
-paso_c0va = paso_tript_uei.replace("a","v")
+## diptongos
+
+paso_dipt_ui = paso_tript_uei.replace("ui", "v0")
+paso_dipt_iu = paso_dipt_ui.replace("iu", "v0")
+
+paso_dipt_ai = paso_dipt_iu.replace("ai", "v0")
+paso_dipt_ei = paso_dipt_ai.replace("ei", "v0")
+paso_dipt_oi = paso_dipt_ei.replace("ei", "v0")
+paso_dipt_au = paso_dipt_oi.replace("au", "v0")
+paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
+paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
+paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
+paso_dipt_io = paso_dipt_ie.replace("io", "0v")
+paso_dipt_ue = paso_dipt_io.replace("ue", "0v")
+paso_dipt_uo = paso_dipt_ue.replace("uo", "0v")
+paso_dipt_ua = paso_dipt_uo.replace("ua", "0v")
+
+paso_c0va = paso_dipt_ua.replace("a","v")
 paso_c0ve = paso_c0va.replace("e","v")
 paso_c0vi = paso_c0ve.replace("i","v")
 paso_c0vo = paso_c0vi.replace("o","v")
@@ -63,5 +76,4 @@ paso_c17 = paso_c16.replace("r","c")
 paso_c18 = paso_c17.replace("c","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-
 print(paso_c18)
