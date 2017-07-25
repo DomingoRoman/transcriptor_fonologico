@@ -22,13 +22,13 @@
 #  
 #  Parte de paso_c18 del tipo cvcvcvc cvcvcvc cvc cv cvcvcv
 
-paso_c18 =("cv cvcv cvc cvcv cv cvvcv")
+paso_c18 =("cv cvcv cvc cvcv cv cvvcv cv cv0cv")
 
 lista_sec_cv = paso_c18.split()
 
 # Llamar a la lista de palabras literales
 
-lista_palabras = ('la', 'kasa', 'del', 'kine', 'se', 'caera')
+lista_palabras = ('la', 'kasa', 'del', 'kine', 'se', 'caera', 'de', 'cauco')
 
 largo_lista_sec_cv =len(lista_sec_cv)
 
