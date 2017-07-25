@@ -54,7 +54,7 @@ paso_ca =paso_ci.replace("ca", "ka")
 paso_co =paso_ca.replace("co", "ko")
 paso_cu =paso_co.replace("cu", "ku")
 
-# sustituye CH por 
+# sustituye CH por t͡∫
 paso_ch = paso_cu.replace("ch", "t͡∫")
 
 # sustituye la X
@@ -149,7 +149,7 @@ print(ene_de_fonemas)
 ######################
 ####
 ####
-paso_tript_uai = paso_u_cre.replace("uai", "0v0")
+paso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
 paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
 paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
@@ -198,9 +198,4 @@ paso_c16 = paso_c15.replace("ʝ","c")
 paso_c17 = paso_c16.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-print(paso_c18)
-
-
-
-
-
+print(paso_c17)
