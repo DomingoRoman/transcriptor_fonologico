@@ -26,8 +26,17 @@ o#!/usr/bin/env python
 #  El punto de partida es "paso_c0" del transcriptor fonológico
 
 ## sustituye vocales por V
-paso_c0 = "derecos sedidos pol el gato de tulno"
-paso_c0va = paso_c0.replace("a","v")
+paso_c0 = "derecos sediendos pol el gato de tulno"
+## diptongos y triptongos
+
+paso_tript_uai = paso_c0.replace("uai", "0v0")
+paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
+paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
+paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
+paso_tript_iau = paso_tript_uau.replace("iau", "0v0")
+paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
+
+paso_c0va = paso_tript_uei.replace("a","v")
 paso_c0ve = paso_c0va.replace("e","v")
 paso_c0vi = paso_c0ve.replace("i","v")
 paso_c0vo = paso_c0vi.replace("o","v")
