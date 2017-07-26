@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-#  # transcriptor_fonologico
 #  
 #  Copyright 2017 mapa <mapa@jules>
 #  
@@ -158,7 +154,9 @@ paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
 paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
 paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
 paso_dipt_io = paso_dipt_ie.replace("io", "0v")
-paso_dipt_ue = paso_dipt_io.replace("ue", "0v")
+# coigüe
+paso_dipt_oi = paso_dipt_ie.replace("oi", "v0")
+paso_dipt_ue = paso_dipt_oi.replace("ue", "0v")
 paso_dipt_uo = paso_dipt_ue.replace("uo", "0v")
 paso_dipt_ua = paso_dipt_uo.replace("ua", "0v")
 
@@ -193,3 +191,112 @@ print(paso_c17)
 print(paso_cuenta_fonemas)
 print(ene_de_fonemas)
 print(lista_palabras,":  ", n_palabras-1)
+
+
+lista_sec_cv = paso_c17.split()
+largo_lista_sec_cv =len(lista_sec_cv)
+
+print(lista_sec_cv, "....", largo_lista_sec_cv)
+for i in lista_sec_cv:
+    print(i)
+
+# dos sílabas	
+# casa
+    if i == "cvcv":
+        print("cv cv")
+# casas
+    if i == "cvcvc":
+        print("cv cvc")
+# causa
+    if i == "cv0cv":
+        print("cv0 cv")
+# causas
+    if i == "cv0cvc":
+        print("cv0 cvc")
+# cuasa
+    if i == "c0vcv":
+        print("c0v cv")
+# cuasas
+    if i == "c0vcvc":
+        print("c0v cvc")
+# cuansa
+    if i == "cv0ccv":
+        print("cv0c cv")
+# cuansas
+    if i == "cv0ccvc":
+        print("cv0c cvc")
+# aa
+    if i == "vv":
+        print("v v")
+# aas
+    if i == "vvc":
+        print("v vc")
+        
+    if i == "cvv":
+        print("cv v")
+
+    if i == "cvvc":
+        print("cv vc")
+
+    if i == "cvccvc":
+        print("cvc cvc")      
+
+    if i == "ccvcv":
+        print("ccv cv")
+
+    if i == "ccvcv":
+        print("ccv cv")
+
+    if i == "ccvcvc":
+        print("ccv cvc")
+
+# trampa tracra*
+    if i == "ccvccv":
+        print("ccv ccv")
+
+    if i == "vcv":
+        print("v cv")
+
+# trenza y troglo*
+    if i == "ccvccv":
+        print("ccvc cv")
+
+# casio
+    if i == "cvc0v":
+        print("cv c0v")
+
+# cautra
+    if i == "cv0ccv":
+        print("cv0c cv")   
+    if i == "vcvc":
+        print("v cvc")
+    if i == "c0vccv":
+        print("c0vc cv")	       
+    if i == "c0vccvc":
+        print("c0vc cvc")	       
+
+# crueles
+    if i == "cc0vcvc":
+        print("cc0v cvc")
+
+# cerdo
+    if i == "cvccv":
+        print("cc0v cvc")
+
+# siempre
+    if i == "c0vcccv":
+        print("c0vc ccvc")
+
+# flaite
+    if i == "ccv0cv":
+        print("ccv0 cv") 
+
+# flaites
+    if i == "ccv0cvc":
+        print("ccv0 cvc")  
+# coigüe
+    if i == "cv0c0v":
+        print("cv0 c0v")  
+# coigües
+    if i == "cv0c0vc":
+        print("cv0 cvc")
