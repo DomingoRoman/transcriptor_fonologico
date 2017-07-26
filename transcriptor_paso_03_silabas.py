@@ -114,3 +114,9 @@ for i in lista_sec_cv:
 # crueles
     if i == "cc0vcvc":
         print("cc0v cvc")    
+# cerdo
+    if i == "cvccv":
+        print("cc0v cvc")
+# siempre
+    if i == "c0vcccv":
+        print("c0vc ccvc")
