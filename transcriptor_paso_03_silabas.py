@@ -125,4 +125,10 @@ for i in lista_sec_cv:
         print("ccv0 cv") 
 # flaites
     if i == "ccv0cvc":
-        print("ccv0 cvc")  
+        print("ccv0 cvc")
+# coigüe
+    if i == "cv0c0v":
+        print("cv0 c0v")  
+# coigües
+    if i == "cv0c0vc":
+        print("cv0 cvc")
