@@ -120,3 +120,9 @@ for i in lista_sec_cv:
 # siempre
     if i == "c0vcccv":
         print("c0vc ccvc")
+# flaite
+    if i == "ccv0cv":
+        print("ccv0 cv") 
+# flaites
+    if i == "ccv0cvc":
+        print("ccv0 cvc")  
