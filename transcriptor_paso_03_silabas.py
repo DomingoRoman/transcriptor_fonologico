@@ -98,3 +98,12 @@ for i in lista_sec_cv:
     if i == "ccvccv":
         print("ccvc cv")
     
+    if i == "cvc0v":
+        print("cv c0v")
+
+    if i == "cv0ccv":
+        print("cv0c cv")
+    if i == "cv0cv":
+        print("cv0 cv")
+    if i == "cv0cvc":
+        print("cv0 cvc")   
