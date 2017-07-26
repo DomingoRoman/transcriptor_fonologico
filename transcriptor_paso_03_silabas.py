@@ -97,13 +97,20 @@ for i in lista_sec_cv:
 # trenza y troglo*
     if i == "ccvccv":
         print("ccvc cv")
-    
+
     if i == "cvc0v":
         print("cv c0v")
 
     if i == "cv0ccv":
         print("cv0c cv")
     if i == "cv0cv":
-        print("cv0 cv")
-    if i == "cv0cvc":
-        print("cv0 cvc")   
+        print("cv0 cv")    
+    if i == "vcvc":
+        print("v cvc")
+    if i == "c0vccv":
+        print("c0vc cv")	       
+    if i == "c0vccvc":
+        print("c0vc cvc")	       
+# crueles
+    if i == "cc0vcvc":
+        print("cc0v cvc")    
