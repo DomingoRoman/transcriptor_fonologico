@@ -87,6 +87,7 @@ for i in lista_sec_cv:
     if i == "ccvcvc":
         print("ccv cvc")
 
+# trampa tracra*
     if i == "ccvccv":
         print("ccv ccv")
 
