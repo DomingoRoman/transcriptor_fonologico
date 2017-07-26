@@ -37,23 +37,38 @@ print(lista_sec_cv, "....", largo_lista_sec_cv)
 for i in lista_sec_cv:
     print(i)
 
-# palabras de dos sílabas	
-
+# dos sílabas	
+# casa
     if i == "cvcv":
         print("cv cv")
-
+# casas
     if i == "cvcvc":
         print("cv cvc")
-
+# causa
     if i == "cv0cv":
         print("cv0 cv")
-
+# causas
+    if i == "cv0cvc":
+        print("cv0 cvc")
+# cuasa
     if i == "c0vcv":
         print("c0v cv")
- 
+# cuasas
+    if i == "c0vcvc":
+        print("c0v cvc")
+# cuansa
+    if i == "cv0ccv":
+        print("cv0c cv")
+# cuansas
+    if i == "cv0ccvc":
+        print("cv0c cvc")
+# aa
     if i == "vv":
         print("v v")
-
+# aas
+    if i == "vvc":
+        print("v vc")
+        
     if i == "cvv":
         print("cv v")
 
