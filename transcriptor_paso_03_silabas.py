@@ -36,16 +36,49 @@ print(lista_sec_cv, "....", largo_lista_sec_cv)
 
 for i in lista_sec_cv:
     print(i)
+
+# palabras de dos sílabas	
+
     if i == "cvcv":
         print("cv cv")
-    if i == "cvcvc":
-       print("cv cvc")
-    if i == "cv0 cv":
-       print("cv0 cv")
-    if i == "vv":
-       print("v v")
-    if i == "cvv":
-       print("cv v")
-    
-        
 
+    if i == "cvcvc":
+        print("cv cvc")
+
+    if i == "cv0cv":
+        print("cv0 cv")
+
+    if i == "c0vcv":
+        print("c0v cv")
+ 
+    if i == "vv":
+        print("v v")
+
+    if i == "cvv":
+        print("cv v")
+
+    if i == "cvvc":
+        print("cv vc")
+
+    if i == "cvccvc":
+        print("cvc cvc")      
+
+    if i == "ccvcv":
+        print("ccv cv")
+
+    if i == "ccvcv":
+        print("ccv cv")
+
+    if i == "ccvcvc":
+        print("ccv cvc")
+
+    if i == "ccvccv":
+        print("ccv ccv")
+
+    if i == "vcv":
+        print("v cv")
+
+# trenza y troglo*
+    if i == "ccvccv":
+        print("ccvc cv")
+    
