@@ -89,11 +89,15 @@ for i in lista_sec_cv:
         print("ccvc ccv")
     if i == "ccvcccvc":
         print("ccvc ccvc")
+# *trampla *tracra*
+    if i == "ccvcccv":
+        print("ccvc ccv")
+    if i == "ccvcccvc":
+        print("ccvc ccvc")
 # trampa trampas
-     if i == "ccvccv":
+    if i == "ccvccv":
         print("ccvc cv")
-# trampa trampas
-     if i == "ccvccvc":
+    if i == "ccvccvc":
         print("ccvc cvc")
 # ala
     if i == "vcv":
