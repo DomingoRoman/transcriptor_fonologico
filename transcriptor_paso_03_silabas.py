@@ -34,6 +34,13 @@ largo_lista_sec_cv =len(lista_sec_cv)
 
 print(lista_sec_cv, "....", largo_lista_sec_cv)
 
+
+# Esta es la serie cv cv cv sobre la cual es hará la clasificación
+
+
+for b in lista_palabras:
+    print("8. ",b)
+
 for i in lista_sec_cv:
     print(i)
 
