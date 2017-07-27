@@ -300,3 +300,9 @@ for i in lista_sec_cv:
 # coigües
     if i == "cv0c0vc":
         print("cv0 cvc")
+# abres
+    if i == "vccvc":
+        print("v ccvc")
+# abre
+    if i == "cv0c0vc":
+        print("v ccvc")
