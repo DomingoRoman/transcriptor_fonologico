@@ -91,18 +91,14 @@ for i in lista_sec_cv:
 # trampa tracra*
     if i == "ccvccv":
         print("ccv ccv")
-
+# trampas tracras*
+    if i == "ccvccvs":
+        print("ccv ccvs")
     if i == "vcv":
         print("v cv")
-
-# trenza y troglo*
-    if i == "ccvccv":
-        print("ccvc cv")
-
 # casio
     if i == "cvc0v":
         print("cv c0v")
-
 # cautra
     if i == "cv0ccv":
         print("cv0c cv")   
