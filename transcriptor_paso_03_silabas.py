@@ -137,4 +137,4 @@ for i in lista_sec_cv:
         print("v ccvc")
 # abre
     if i == "cv0c0vc":
-print("v ccvc")
+        print("v ccvc")
