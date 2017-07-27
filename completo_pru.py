@@ -185,18 +185,23 @@ paso_c15 = paso_c14.replace("t","c")
 paso_c16 = paso_c15.replace("ʝ","c")
 paso_c17 = paso_c16.replace("r","c")
 
-# Esta es la serie cv cv cv sobre la cual es hará la clasificación
-print(paso_u_cre)
-print(paso_c17)
-print(paso_cuenta_fonemas)
-print(ene_de_fonemas)
-print(lista_palabras,":  ", n_palabras-1)
 
+# Esta es la serie cv cv cv sobre la cual es hará la clasificación
+print("1. ", palabra)
+print("2. ", paso_u_cre)
+print("3. ", paso_c17)
+print("4. ", paso_cuenta_fonemas)
+print("5. ", ene_de_fonemas)
+print("6. ", lista_palabras,":  ", n_palabras)
 
 lista_sec_cv = paso_c17.split()
 largo_lista_sec_cv =len(lista_sec_cv)
 
-print(lista_sec_cv, "....", largo_lista_sec_cv)
+print("7. ", lista_sec_cv, "....", largo_lista_sec_cv)
+
+for b in lista_palabras:
+    print("8. ",b)
+
 for i in lista_sec_cv:
     print(i)
 
