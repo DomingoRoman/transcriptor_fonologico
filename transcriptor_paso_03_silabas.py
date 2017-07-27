@@ -65,13 +65,11 @@ for i in lista_sec_cv:
 # aa
     if i == "vv":
         print("v v")
-# aas
     if i == "vvc":
         print("v vc")
-        
+ # cae       
     if i == "cvv":
         print("cv v")
-
     if i == "cvvc":
         print("cv vc")
 #cansas
@@ -81,19 +79,23 @@ for i in lista_sec_cv:
         print("cvc cv")  
     if i == "ccvcv":
         print("ccv cv")
-
+#clase
     if i == "ccvcv":
         print("ccv cv")
-
     if i == "ccvcvc":
         print("ccv cvc")
-
-# trampa tracra*
-    if i == "ccvccv":
-        print("ccv ccv")
-# trampas tracras*
-    if i == "ccvccvs":
-        print("ccv ccvs")
+# *trampla *tracra*
+    if i == "ccvcccv":
+        print("ccvc ccv")
+    if i == "ccvcccvc":
+        print("ccvc ccvc")
+# trampa trampas
+     if i == "ccvccv":
+        print("ccvc cv")
+# trampa trampas
+     if i == "ccvccvc":
+        print("ccvc cvc")
+# ala
     if i == "vcv":
         print("v cv")
 # casio
@@ -118,19 +120,15 @@ for i in lista_sec_cv:
 # flaite
     if i == "ccv0cv":
         print("ccv0 cv") 
-
-# flaites
     if i == "ccv0cvc":
         print("ccv0 cvc")  
 # coigüe
     if i == "cv0c0v":
         print("cv0 c0v")  
-# coigües
     if i == "cv0c0vc":
         print("cv0 cvc")
-# abres
+# abre
     if i == "vccvc":
         print("v ccvc")
-# abre
     if i == "cv0c0vc":
         print("v ccvc")
