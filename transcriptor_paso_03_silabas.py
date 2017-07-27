@@ -74,10 +74,11 @@ for i in lista_sec_cv:
 
     if i == "cvvc":
         print("cv vc")
-
+#cansas
     if i == "cvccvc":
         print("cvc cvc")      
-
+    if i == "cvccv":
+        print("cvc cv")  
     if i == "ccvcv":
         print("ccv cv")
 
@@ -98,13 +99,13 @@ for i in lista_sec_cv:
     if i == "ccvccv":
         print("ccvc cv")
 
+# casio
     if i == "cvc0v":
         print("cv c0v")
 
+# cautra
     if i == "cv0ccv":
-        print("cv0c cv")
-    if i == "cv0cv":
-        print("cv0 cv")    
+        print("cv0c cv")   
     if i == "vcvc":
         print("v cvc")
     if i == "c0vccv":
@@ -113,22 +114,27 @@ for i in lista_sec_cv:
         print("c0vc cvc")	       
 # crueles
     if i == "cc0vcvc":
-        print("cc0v cvc")    
-# cerdo
-    if i == "cvccv":
         print("cc0v cvc")
 # siempre
     if i == "c0vcccv":
         print("c0vc ccvc")
+
 # flaite
     if i == "ccv0cv":
         print("ccv0 cv") 
+
 # flaites
     if i == "ccv0cvc":
-        print("ccv0 cvc")
+        print("ccv0 cvc")  
 # coigüe
     if i == "cv0c0v":
         print("cv0 c0v")  
 # coigües
     if i == "cv0c0vc":
         print("cv0 cvc")
+# abres
+    if i == "vccvc":
+        print("v ccvc")
+# abre
+    if i == "cv0c0vc":
+print("v ccvc")
