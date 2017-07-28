@@ -35,6 +35,15 @@ n_palabras=len(lista_palabras)
 # poner todo en minúsculas
 palabra = palabra.lower()
 
+# Elimina acentos
+paso_a = palabra.replace("á", "a")
+paso_e = paso_a.replace("é", "e")
+paso_i = paso_e.replace("í", "i")
+paso_o = paso_i.replace("ó", "o")
+paso_u = paso_o.replace("ú", "u")
+
+# sustituye V por B
+paso_b = paso_u.replace("v", "b")
 # sustituye V por B
 paso_b = palabra.replace("v", "b")
 
