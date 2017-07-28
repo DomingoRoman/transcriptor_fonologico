@@ -91,6 +91,11 @@ for i in lista_sec_cv:
         print("ccv cv")
     if i == "ccvcvc":
         print("ccv cvc")
+# crío críos
+    if i == "ccvv":
+        print("ccv v")
+    if i == "ccvvc":
+        print("ccv vc")
 # *trampla *tracra*
     if i == "ccvcccv":
         print("ccvc ccv")
@@ -127,7 +132,6 @@ for i in lista_sec_cv:
 # siempre
     if i == "c0vcccv":
         print("c0vc ccvc")
-
 # flaite
     if i == "ccv0cv":
         print("ccv0 cv") 
