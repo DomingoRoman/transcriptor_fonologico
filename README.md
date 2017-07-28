@@ -13,4 +13,3 @@
 #    listado de tipos de sílabas (cv cvc, etc.) que se pueden encontrar.
 ######
 #    En este momento, solo funciona con palabras de una y de dos sílabas.
-
