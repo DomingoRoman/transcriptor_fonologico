@@ -22,9 +22,9 @@
 #  
 #  Parte de paso_c18 del tipo cvcvcvc cvcvcvc cvc cv cvcvcv
 
-paso_c18 =("cv cv0cv cvc cvcv cvv cvvcv cv cv0cv")
+paso_c17 =("cv cv0cv cvc cvcv cvv cvvcv cv cv0cv")
 
-lista_sec_cv = paso_c18.split()
+lista_sec_cv = paso_c17.split()
 
 # Llamar a la lista de palabras literales
 
@@ -83,9 +83,7 @@ for i in lista_sec_cv:
     if i == "cvccvc":
         print("cvc cvc")      
     if i == "cvccv":
-        print("cvc cv")  
-    if i == "ccvcv":
-        print("ccv cv")
+        print("cvc cv")
 #clase
     if i == "ccvcv":
         print("ccv cv")
@@ -119,11 +117,11 @@ for i in lista_sec_cv:
         print("cv c0v")
 # cautra
     if i == "cv0ccv":
-        print("cv0c cv")   
+        print("cv0 ccv")   
     if i == "vcvc":
         print("v cvc")
     if i == "c0vccv":
-        print("c0vc cv")	       
+        print("c0v ccv")	       
     if i == "c0vccvc":
         print("c0vc cvc")	       
 # crueles
