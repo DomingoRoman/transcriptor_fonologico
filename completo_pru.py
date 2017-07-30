@@ -222,7 +222,7 @@ paso_c16 = paso_c15.replace("r","c")
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
 print("1. ", palabra)
 print("2. ", paso_u_cre)
-print("3. ", paso_c17)
+print("3. ", paso_c16)
 print("4. ", paso_cuenta_fonemas)
 print("5. ", ene_de_fonemas)
 print("6. ", lista_palabras,":  ", n_palabras)
