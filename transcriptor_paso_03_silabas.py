@@ -45,11 +45,15 @@ for i in lista_sec_cv:
     print(i)
 
 # dos sílabas	
-# aka
 if i == "vv":
     print("v v")
 if i == "vvc":
     print("v vc")
+if i == "cvv":
+    print("cv v")
+if i == "cvvc":
+    print("cv vc")
+
 # akai
 if i == "vcv0":
     print("v cv0")
