@@ -295,3 +295,13 @@ if i == "c1v0c10v":
     print("c1v0 c10v")
 if i == "c1v0c10vc":
     print("c1v0 c10vc")
+# klainklia
+if i == "c1v0cc10v":
+    print("c1v0c c10v")
+if i == "c1v0cc10vc":
+    print("c1v0c c10vc")
+# kliankla
+if i == "c10vcc1v":
+    print("c1v0cc c1v")
+if i == "c1v0cc1vc":
+    print("c1v0c c1vc")
