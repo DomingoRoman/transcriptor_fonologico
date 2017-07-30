@@ -22,7 +22,7 @@
 #  
 #  Parte de paso_c18 del tipo cvcvcvc cvcvcvc cvc cv cvcvcv
 
-paso_c17 =("cv cv0cv cvc cvcv cvv cvvcv cv cv0cv")
+paso_c16 =("cv cv0cv cvc cvcv cvv cvvcv cv cv0cv")
 
 lista_sec_cv = paso_c17.split()
 
