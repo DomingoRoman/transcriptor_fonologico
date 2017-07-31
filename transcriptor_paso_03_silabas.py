@@ -151,11 +151,6 @@ for i in lista_sec_cv:
         print("c0v c0v")
     if i == "c0vc0vc":
         print("c0v c0vc")
-# kaika
-    if i == "cv0cv":
-        print("cv0 cv")
-    if i == "cv0cvc":
-        print("cv0 cvc")
 # kaikai
     if i == "cv0cv0":
         print("cv0 cv0")
