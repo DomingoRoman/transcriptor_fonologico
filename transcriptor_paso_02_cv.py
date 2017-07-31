@@ -52,8 +52,6 @@ paso_liq_11 = paso_liq_10.replace("pr","c1")
 paso_liq_12 = paso_liq_11.replace("tr","c1")
 paso_liq_13 = paso_liq_12.replace("tl","c1")
 
-print(paso_liq_13)
-
 # sustituye consonantes por C
 paso_c01 = paso_liq_13.replace("b","c")
 paso_c02 = paso_c01.replace("d","c")
@@ -84,12 +82,3 @@ lista_sec_cv = paso_c16.split()
 largo_lista_sec_cv =len(lista_sec_cv)
 
 print("7. ", lista_sec_cv, "....", largo_lista_sec_cv)
-
-for b in lista_palabras:
-    print("8. ",b)
-
-for i in lista_sec_cv:
-    print(i)
-
-print("STOPPPPP")
-# en cada caso se incluyen los plurales
