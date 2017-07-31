@@ -227,10 +227,16 @@ print("4. ", paso_cuenta_fonemas)
 print("5. ", ene_de_fonemas)
 print("6. ", lista_palabras,":  ", n_palabras)
 
-lista_sec_cv = paso_c17.split()
+lista_sec_cv = paso_c16.split()
 largo_lista_sec_cv =len(lista_sec_cv)
 
 print("7. ", lista_sec_cv, "....", largo_lista_sec_cv)
+
+for b in lista_palabras:
+    print("8. ",b)
+
+for i in lista_sec_cv:
+    print(i)
 
 for b in lista_palabras:
     print("8. ",b)
@@ -243,6 +249,10 @@ for i in lista_sec_cv:
         print("v v")
     if i == "vvc":
         print("v vc")
+    if i == "cvv":
+        print("cv v")
+    if i == "cvvc":
+        print("cv vc")
 # akai
     if i == "vcv0":
         print("v cv0")
@@ -293,6 +303,23 @@ for i in lista_sec_cv:
         print("cv cv")
     if i == "cvcvc":
         print("cv cvc")
+# kansa
+    if i == "cvccv":
+        print("cvc cv")
+    if i == "cvccvc":
+        print("cvc cvc")
+# kainsa
+    if i == "cv0ccv":
+        print("cv0c cv")
+    if i == "cv0ccvc":
+        print("cv0c cvc")
+# kiansa
+    if i == "c0vccv":
+        print("c0vc cv")
+    if i == "c0vccvc":
+        print("c0vc cvc")
+# kansai
+# kansia
 # kakai
     if i == "cvcv0":
         print("cv cv0")
@@ -400,7 +427,7 @@ for i in lista_sec_cv:
         print("cv c10vc")
 # kaikla
     if i == "cv0c1v":
-         print("cv0 c1v")
+        print("cv0 c1v")
     if i == "cv0c1vc":
         print("cv0 c1vc")
 # kiakla
@@ -483,3 +510,28 @@ for i in lista_sec_cv:
         print("c1v0 c10v")
     if i == "c1v0c10vc":
         print("c1v0 c10vc")
+# klanka
+    if i == "c1vccv":
+        print("c1vc cv")
+    if i == "c1vccvc":
+        print("c1vc cvc")
+# klainka
+    if i == "c1v0ccv":
+        print("c1v0c cv")
+    if i == "c1v0ccvc":
+        print("c1v0c cvc")
+# klankia
+    if i == "c1vcc0v":
+        print("c1vc c0v")
+    if i == "c1vcc0vc":
+        print("c1vc c0vc")
+# klainklia
+    if i == "c1v0cc10v":
+        print("c1v0c c10v")
+    if i == "c1v0cc10vc":
+        print("c1v0c c10vc")
+# kliankla
+    if i == "c10vcc1v":
+        print("c1v0cc c1v")
+    if i == "c1v0cc1vc":
+        print("c1v0c c1vc")
