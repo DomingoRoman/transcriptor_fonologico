@@ -154,7 +154,7 @@ paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
 paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
 paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
 paso_dipt_io = paso_dipt_ie.replace("io", "0v")
-aso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
+paso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
 paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
 paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
@@ -323,11 +323,6 @@ if i == "c0vc0v":
     print("c0v c0v")
 if i == "c0vc0vc":
     print("c0v c0vc")
-# kaika
-if i == "cv0cv":
-    print("cv0 cv")
-if i == "cv0cvc":
-    print("cv0 cvc")
 # kaikai
 if i == "cv0cv0":
     print("cv0 cv0")
