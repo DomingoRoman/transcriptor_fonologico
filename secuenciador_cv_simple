@@ -20,8 +20,6 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
-#  
-# entrada es "paso_c0"
 
 ## sustituye vocales por V
 
@@ -49,6 +47,4 @@ paso_c13 = paso_c12.replace("ɾ","c")
 paso_c14 = paso_c13.replace("s","c")
 paso_c15 = paso_c14.replace("t","c")
 paso_c16 = paso_c15.replace("ʝ","c")
-paso_c17 = paso_c16.replace("c","c")
 
-print(paso_c17)
