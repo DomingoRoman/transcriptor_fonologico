@@ -1,42 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-#  silabificador.py
-#  
-#  Copyright 2017 Pedro Domingo Roman <historiadores@iMac-de-Pedro.local>
-#  
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2 of the License, or
-#  (at your option) any later version.
-#  
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#  
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-#  
-#  Parte de paso_c18 del tipo cvcvcvc cvcvcvc cvc cv cvcvcv
-
-paso_c16 =("cv cv0cv cvc cvcv cvv cvvcv cv cv0cv")
-
-lista_sec_cv = paso_c17.split()
-
-# Llamar a la lista de palabras literales
-
-lista_palabras = ('la', 'pieza', 'del', 'kine', 'sea', 'caera', 'de', 'cauco')
-
-largo_lista_sec_cv =len(lista_sec_cv)
-
-print(lista_sec_cv, "....", largo_lista_sec_cv)
-
-
-# Esta es la serie cv cv cv sobre la cual es hará la clasificación
-
 
 for b in lista_palabras:
     print("8. ",b)
@@ -44,7 +5,6 @@ for b in lista_palabras:
 for i in lista_sec_cv:
     print(i)
 
-# dos sílabas	
 # dos sílabas	
     if i == "vv":
         print("v v")
