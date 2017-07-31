@@ -401,85 +401,85 @@ for i in lista_sec_cv:
 # kaikla
     if i == "cv0c1v":
          print("cv0 c1v")
-if i == "cv0c1vc":
-    print("cv0 c1vc")
+    if i == "cv0c1vc":
+        print("cv0 c1vc")
 # kiakla
-if i == "c0vc1v":
-    print("c0v c1v")
-if i == "c0vc1vc":
-    print("c0v c1vc")
+    if i == "c0vc1v":
+        print("c0v c1v")
+    if i == "c0vc1vc":
+        print("c0v c1vc")
 # kiaklai
-if i == "c0vc1v0":
-    print("c0v c1v0")
-if i == "c0vc1v0c":
-    print("c0v c1v0c")
+    if i == "c0vc1v0":
+        print("c0v c1v0")
+    if i == "c0vc1v0c":
+        print("c0v c1v0c")
 # kiaklia
-if i == "c0vc10v":
-    print("c0v c10v")
-if i == "c0vc10vc":
-    print("c0v c10vc")
+    if i == "c0vc10v":
+        print("c0v c10v")
+    if i == "c0vc10vc":
+        print("c0v c10vc")
 # kaikla
-if i == "cv0c1v":
-    print("cv0 c1v")
-if i == "cv0c1vc":
-    print("cv0 c1vc")
+    if i == "cv0c1v":
+        print("cv0 c1v")
+    if i == "cv0c1vc":
+        print("cv0 c1vc")
 # kaiklai
-if i == "cv0c1v0":
-    print("cv0 c1v0")
-if i == "cv0c1v0c":
-    print("cv0 c1v0c")
+    if i == "cv0c1v0":
+        print("cv0 c1v0")
+    if i == "cv0c1v0c":
+        print("cv0 c1v0c")
 # kaiklia
-if i == "cv0c10v":
-    print("cv0 c10v")
-if i == "cv0c10vc":
-    print("cv0 c10vc")
+    if i == "cv0c10v":
+        print("cv0 c10v")
+    if i == "cv0c10vc":
+        print("cv0 c10vc")
 # klakla
-if i == "c1vc1v":
-    print("c1v c1v")
-if i == "c1vc1vc":
-    print("c1v c1vc")
+    if i == "c1vc1v":
+        print("c1v c1v")
+    if i == "c1vc1vc":
+        print("c1v c1vc")
 # klaklai
-if i == "c1vc1v0":
-    print("c1v c1v0")
-if i == "c1vc1v0c":
-    print("c1v c1v0c")
+    if i == "c1vc1v0":
+        print("c1v c1v0")
+    if i == "c1vc1v0c":
+        print("c1v c1v0c")
 # klaklia
-if i == "c1vc10v":
-    print("c1v c10v")
-if i == "c1vc10vc":
-    print("c1v c10vc")
+    if i == "c1vc10v":
+        print("c1v c10v")
+    if i == "c1vc10vc":
+        print("c1v c10vc")
 # klaikla
-if i == "c1vc10v":
-    print("c1v c10v")
-if i == "c1vc10vc":
-    print("c1v c10vc")
+    if i == "c1vc10v":
+        print("c1v c10v")
+    if i == "c1vc10vc":
+        print("c1v c10vc")
 # kliakla
-if i == "c1vc10v":
-    print("c1v c10v")
-if i == "c1vc10vc":
-    print("c1v c10vc")
+    if i == "c1vc10v":
+        print("c1v c10v")
+    if i == "c1vc10vc":
+        print("c1v c10vc")
 # kliaklai
-if i == "c10vc1v0":
-    print("c10v c1v0")
-if i == "c10vc1v0c":
-    print("c10v c1v0c")
+    if i == "c10vc1v0":
+        print("c10v c1v0")
+    if i == "c10vc1v0c":
+        print("c10v c1v0c")
 # kliaklia
-if i == "c10vc10v":
-    print("c10v c10v")
-if i == "c10vc10vc":
-    print("c10v c10vc")
+    if i == "c10vc10v":
+        print("c10v c10v")
+    if i == "c10vc10vc":
+        print("c10v c10vc")
 # klaikla
-if i == "c1v0c1v":
-    print("c1v0 c1v")
-if i == "c1v0c1vc":
-    print("c1v0 c1v")
+    if i == "c1v0c1v":
+        print("c1v0 c1v")
+    if i == "c1v0c1vc":
+        print("c1v0 c1v")
 # klaiklai
-if i == "c1v0c1v0":
-    print("c1v0 c1v0")
-if i == "c1v0c1v0c":
-    print("c1v0 c1v0c")
+    if i == "c1v0c1v0":
+        print("c1v0 c1v0")
+    if i == "c1v0c1v0c":
+        print("c1v0 c1v0c")
 # klaiklia
-if i == "c1v0c10v":
-    print("c1v0 c10v")
-if i == "c1v0c10vc":
-    print("c1v0 c10vc")
+    if i == "c1v0c10v":
+        print("c1v0 c10v")
+    if i == "c1v0c10vc":
+        print("c1v0 c10vc")
