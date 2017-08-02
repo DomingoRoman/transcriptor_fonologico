@@ -1,9 +1,40 @@
+# Este FOR servirá para ver dónde está el acento gráfico
+# en la palabra.
+# por el momento no se usa
 
-for b in lista_palabras:
-    print("8. ",b)
+#for b in lista_palabras:
+#    print("8. ",b)
+
+# comienza la separación silábica por la estructura
 
 for i in lista_sec_cv:
     print(i)
+
+# Una sílaba
+   if i == "v":
+       print("v")
+   if i == "cv": 
+       print("cv")
+   if i == "vc":
+       print("vc")
+   if i == "cvc": 
+       print("cvc")
+   if i == "0v": 
+       print("cv")
+    if i == "v0": 
+       print("v0")
+   if i == "0v0": 
+       print("0v0")
+   if i == "c0v0": 
+       print("c0v0")
+   if i == "c1v": 
+       print("c1v")
+   if i == "c1vc": 
+       print("c1vc")
+   if i == "c1v0": 
+       print("c1v0")   
+   if i == "c1v0c": 
+       print("c1v0")
 
 # dos sílabas	
     if i == "vv":
