@@ -35,7 +35,10 @@ for i in lista_sec_cv:
         print("c1v0")   
     if i == "c1v0c": 
         print("c1v0")
-
+    if i == "c0v":
+        print("c0v")  
+    if i == "c0vc":
+        print("c0vc")
 # dos sílabas	
     if i == "vv":
         print("v v")
@@ -55,6 +58,11 @@ for i in lista_sec_cv:
         print("v c0v")
     if i == "vc0vc":
         print("v c0vc")
+# akra
+    if i == "vc1v":
+        print("v c1v")
+    if i == "vc1vc":
+        print("v c1vc")
 # aika
     if i == "v0cv":
         print("v0 cv")
