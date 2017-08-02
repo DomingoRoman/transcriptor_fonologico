@@ -121,6 +121,11 @@ for i in lista_sec_cv:
         print("cv0 c0v")
     if i == "cv0c0vc":
         print("cv0 c0vc")
+# kleo
+    if i == "c1vv":
+        print("c1v v")
+    if i == "c1vvc":
+        print("c1v vc")
 # klaka
     if i == "c1vcv":
         print("c1v cv")
