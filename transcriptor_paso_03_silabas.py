@@ -226,6 +226,11 @@ for i in lista_sec_cv:
         print("cv0 c10v")
     if i == "cv0c10vc":
         print("cv0 c10vc")
+# klakia
+    if i == "c1vc0v":
+        print("c1v c0v")
+    if i == "c1vc0vc":
+        print("c1v c0vc")
 # klakla
     if i == "c1vc1v":
         print("c1v c1v")
