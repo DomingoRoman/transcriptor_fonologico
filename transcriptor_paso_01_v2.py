@@ -127,23 +127,18 @@ paso_pcoma = paso_coma.replace(";","")
 paso_2punt = paso_pcoma.replace(";","")
 
 # Escribe Ü como u
-paso_u_cre = paso_2punt.replace("ü", "u")
+transcripcion_final = paso_2punt.replace("ü", "u")
 
 # imprime resultado
-print(paso_u_cre)
+print(transcripcion_final)
 print(lista_palabras,":  ", n_palabras-1)
-#
-#
+
+#########################################
 #########################################
 # El siguiente paso cambia t͡∫ por un solo
-# caracter: c
-# para efectos de contar los fonemas
-
-paso_cuenta_fonemas = paso_u_cre.replace("t͡∫","c")
-
-print(paso_cuenta_fonemas)
-
+# caracter: "c" para efectos de contar los fonemas
+paso_cuenta_fonemas = transcripcion_final.replace("t͡∫","c")
 paso_cuenta_fonemas_1 = paso_cuenta_fonemas.replace(" ", "")
-print(paso_cuenta_fonemas_1)
 ene_de_fonemas = len(paso_cuenta_fonemas_1)
-print(ene_de_fonemas)
+#########################################
+#########################################
