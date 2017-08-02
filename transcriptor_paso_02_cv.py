@@ -72,12 +72,8 @@ paso_c16 = paso_c15.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
 
-print("3. ", paso_c16)
-print("4. ", paso_cuenta_fonemas)
-print("5. ", ene_de_fonemas)
-print("6. ", lista_palabras,":  ", n_palabras)
+print("1. Tiene", ene_de_fonemas, "fonemas")
+print("2. Estructura silábica:", paso_c16)
 
 lista_sec_cv = paso_c16.split()
 largo_lista_sec_cv =len(lista_sec_cv)
-
-print("7. ", lista_sec_cv, "....", largo_lista_sec_cv)
