@@ -306,3 +306,8 @@ for i in lista_sec_cv:
         print("c1v0cc c1v")
     if i == "c1v0cc1vc":
         print("c1v0c c1vc")
+# kiankla
+    if i == "c0vcc1v":
+        print("c0vc c1v")
+    if i == "c0vcb1vc":
+        print("c0vc c1vc")
