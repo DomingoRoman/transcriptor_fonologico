@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  base.py
 #  
-#  Copyright 2017 mapa <mapa@jules>
+#  Copyright 2017 imac <imac@iMac-de-imac.local>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -15,6 +19,7 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
+#  
 
 palabra = input('escribe unas palabras:   ')
 
@@ -40,6 +45,8 @@ paso_u = paso_o.replace("ú", "u")
 
 # sustituye V por B
 paso_b = paso_u.replace("v", "b")
+# sustituye V por B
+paso_b = palabra.replace("v", "b")
 
 # sustituye C por S
 paso_ce = paso_b.replace("ce", "se")
@@ -50,7 +57,7 @@ paso_ca =paso_ci.replace("ca", "ka")
 paso_co =paso_ca.replace("co", "ko")
 paso_cu =paso_co.replace("cu", "ku")
 
-# sustituye CH por t͡∫
+# sustituye CH por 
 paso_ch = paso_cu.replace("ch", "t͡∫")
 
 # sustituye la X
@@ -94,6 +101,7 @@ paso_gi = paso_ge.replace("gui","gi")
 paso_rr1 = paso_gi.replace("rr","00")
 
 # sustituye casos de ERE
+
 paso_r1 = paso_rr1.replace("ar","aɾ")
 paso_r2 = paso_r1.replace("er","eɾ")
 paso_r3 = paso_r2.replace("ir","iɾ")
@@ -106,9 +114,10 @@ paso_r9 = paso_r8.replace("tr","tɾ")
 paso_r10 = paso_r9.replace("dr","dɾ")
 paso_r11 = paso_r10.replace("fr","fɾ")
 paso_r12 = paso_r11.replace("cr","kɾ")
+paso_r13 = paso_r12.replace("cl","kl")
 
 # sustituye ERRES (2)
-paso_rr2 = paso_r12.replace("00","r")
+paso_rr2 = paso_r13.replace("00","r")
 
 # sustituye EÑE
 paso_ñ = paso_rr2.replace("ñ","ɲ")
@@ -120,40 +129,41 @@ paso_pcoma = paso_coma.replace(";","")
 paso_2punt = paso_pcoma.replace(";","")
 
 # Escribe Ü como u
-paso_u_cre = paso_2punt.replace("ü", "u")
+transcripcion_final = paso_2punt.replace("ü", "u")
+
+# imprime resultado
+print("/",transcripcion_final,"/")
 
 #########################################
+#########################################
 # El siguiente paso cambia t͡∫ por un solo
-# caracter: c
-# para efectos de contar los fonemas
-paso_cuenta_fonemas = paso_u_cre.replace("t͡∫","c")
+# caracter: "c" para efectos de contar los fonemas
+paso_cuenta_fonemas = transcripcion_final.replace("t͡∫","c")
 paso_cuenta_fonemas_1 = paso_cuenta_fonemas.replace(" ", "")
-
 ene_de_fonemas = len(paso_cuenta_fonemas_1)
+#########################################
+#########################################
 
-#####################
-######################
-####
-####
-paso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
-paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
-paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
-paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
-paso_tript_iau = paso_tript_uau.replace("iau", "0v0")
-paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
 
-## diptongos
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+##### SEGUNDA PARTE
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
 
-paso_dipt_ui = paso_tript_uei.replace("ui", "v0")
-paso_dipt_iu = paso_dipt_ui.replace("iu", "v0")
-paso_dipt_ai = paso_dipt_iu.replace("ai", "v0")
-paso_dipt_ei = paso_dipt_ai.replace("ei", "v0")
-paso_dipt_oi = paso_dipt_ei.replace("ei", "v0")
-paso_dipt_au = paso_dipt_oi.replace("au", "v0")
-paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
-paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
-paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
-paso_dipt_io = paso_dipt_ie.replace("io", "0v")
+## TRIPTONGOS
 paso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
 paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
@@ -172,7 +182,7 @@ paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
 paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
 paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
 paso_dipt_io = paso_dipt_ie.replace("io", "0v")
-paso_dipt_oi = paso_dipt_ie.replace("oi", "v0")
+paso_dipt_oi = paso_dipt_io.replace("oi", "v0")
 paso_dipt_ue = paso_dipt_oi.replace("ue", "0v")
 paso_dipt_uo = paso_dipt_ue.replace("uo", "0v")
 paso_dipt_ua = paso_dipt_uo.replace("ua", "0v")
@@ -184,22 +194,21 @@ paso_c0vi = paso_c0ve.replace("i","v")
 paso_c0vo = paso_c0vi.replace("o","v")
 paso_c0vu = paso_c0vo.replace("u","v")
 
+
 # LÍQUIDAS
-paso_liq_01 = paso_c0vu.replace("br","c1")
+paso_liq_01 = paso_c0vu.replace("bɾ","c1")
 paso_liq_02 = paso_liq_01.replace("bl","c1")
-paso_liq_03 = paso_liq_02.replace("cr","c1")
-paso_liq_04 = paso_liq_03.replace("cl","c1")
-paso_liq_05 = paso_liq_04.replace("dr","c1")
-paso_liq_06 = paso_liq_05.replace("fr","c1")
+paso_liq_03 = paso_liq_02.replace("kɾ","c1")
+paso_liq_04 = paso_liq_03.replace("kl","c1")
+paso_liq_05 = paso_liq_04.replace("dɾ","c1")
+paso_liq_06 = paso_liq_05.replace("fɾ","c1")
 paso_liq_07 = paso_liq_06.replace("fl","c1")
-paso_liq_08 = paso_liq_07.replace("gr","c1")
+paso_liq_08 = paso_liq_07.replace("gɾ","c1")
 paso_liq_09 = paso_liq_08.replace("gl","c1")
 paso_liq_10 = paso_liq_09.replace("pl","c1")
-paso_liq_11 = paso_liq_10.replace("pr","c1")
-paso_liq_12 = paso_liq_11.replace("tr","c1")
+paso_liq_11 = paso_liq_10.replace("pɾ","c1")
+paso_liq_12 = paso_liq_11.replace("tɾ","c1")
 paso_liq_13 = paso_liq_12.replace("tl","c1")
-
-print(paso_liq_13)
 
 # sustituye consonantes por C
 paso_c01 = paso_liq_13.replace("b","c")
@@ -220,30 +229,73 @@ paso_c15 = paso_c14.replace("ʝ","c")
 paso_c16 = paso_c15.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-print("1. ", palabra)
-print("2. ", paso_u_cre)
-print("3. ", paso_c16)
-print("4. ", paso_cuenta_fonemas)
-print("5. ", ene_de_fonemas)
-print("6. ", lista_palabras,":  ", n_palabras)
+
+print("1. Tiene", ene_de_fonemas, "fonemas")
+print("2. Estructura silábica:", paso_c16)
 
 lista_sec_cv = paso_c16.split()
 largo_lista_sec_cv =len(lista_sec_cv)
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+##### TERCERA PARTE
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
+#########################################
 
-print("7. ", lista_sec_cv, "....", largo_lista_sec_cv)
 
-for b in lista_palabras:
-    print("8. ",b)
+# Este FOR servirá para ver dónde está el acento gráfico
+# en la palabra.
+# por el momento no se usa
+
+#for b in lista_palabras:
+#    print("8. ",b)
+
+# comienza la separación silábica por la estructura
 
 for i in lista_sec_cv:
-    print(i)
+#    print(i)
 
-for b in lista_palabras:
-    print("8. ",b)
-
-for i in lista_sec_cv:
-    print(i)
-
+# Una sílaba
+    if i == "v":
+        print("v")
+    if i == "cv": 
+       print("cv")
+    if i == "vc":
+       print("vc")
+    if i == "cvc": 
+       print("cvc")
+ ## con diptongo
+    if i == "0v": 
+       print("0v")
+    if i == "v0": 
+       print("v0")
+    if i == "0v0": 
+       print("0v0")
+    if i == "c0v0": 
+       print("c0v0")
+    if i == "c1v": 
+       print("c1v")
+    if i == "c1vc": 
+       print("c1vc")
+    if i == "c1v0": 
+       print("c1v0")   
+    if i == "c1v0c": 
+       print("c1v0")
+    if i == "c0v":
+       print("c0v")
+    if i == "c0vc":
+       print("c0vc")
 # dos sílabas	
     if i == "vv":
         print("v v")
@@ -263,6 +315,11 @@ for i in lista_sec_cv:
         print("v c0v")
     if i == "vc0vc":
         print("v c0vc")
+# akra
+    if i == "vc1v":
+        print("v c1v")
+    if i == "vc1vc":
+        print("v c1vc")
 # aika
     if i == "v0cv":
         print("v0 cv")
@@ -360,6 +417,11 @@ for i in lista_sec_cv:
         print("cv0 c0v")
     if i == "cv0c0vc":
         print("cv0 c0vc")
+# kleo
+    if i == "c1vv":
+        print("c1v v")
+    if i == "c1vvc":
+        print("c1v vc")
 # klaka
     if i == "c1vcv":
         print("c1v cv")
@@ -460,6 +522,11 @@ for i in lista_sec_cv:
         print("cv0 c10v")
     if i == "cv0c10vc":
         print("cv0 c10vc")
+# klakia
+    if i == "c1vc0v":
+        print("c1v c0v")
+    if i == "c1vc0vc":
+        print("c1v c0vc")
 # klakla
     if i == "c1vc1v":
         print("c1v c1v")
@@ -535,3 +602,8 @@ for i in lista_sec_cv:
         print("c1v0cc c1v")
     if i == "c1v0cc1vc":
         print("c1v0c c1vc")
+# kiankla
+    if i == "c0vcc1v":
+        print("c0vc c1v")
+    if i == "c0vcb1vc":
+        print("c0vc c1vc")
