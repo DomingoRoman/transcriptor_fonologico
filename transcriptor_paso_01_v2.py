@@ -113,9 +113,10 @@ paso_r9 = paso_r8.replace("tr","tɾ")
 paso_r10 = paso_r9.replace("dr","dɾ")
 paso_r11 = paso_r10.replace("fr","fɾ")
 paso_r12 = paso_r11.replace("cr","kɾ")
+paso_r13 = paso_r12.replace("cl", "kl")
 
 # sustituye ERRES (2)
-paso_rr2 = paso_r12.replace("00","r")
+paso_rr2 = paso_r13.replace("00","r")
 
 # sustituye EÑE
 paso_ñ = paso_rr2.replace("ñ","ɲ")
