@@ -131,7 +131,6 @@ transcripcion_final = paso_2punt.replace("ü", "u")
 
 # imprime resultado
 print(transcripcion_final)
-print(lista_palabras,":  ", n_palabras-1)
 
 #########################################
 #########################################
