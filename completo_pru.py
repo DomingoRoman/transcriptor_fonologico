@@ -607,3 +607,7 @@ for i in lista_sec_cv:
         print("c0vc c1v")
     if i == "c0vcb1vc":
         print("c0vc c1vc")
+# n_v da el número de "v", es decir, el número de sílabas.
+n_v = paso_c16.count("v")
+
+print("La expresión: ",palabra,", tiene",ene_de_fonemas,"fonemas y la composición silábica",paso_c16,"y",n_v,"sílabas.")
