@@ -9,6 +9,8 @@
 
 for i in lista_sec_cv:
     print(i)
+    n_v = i.count("v")
+    print(n_v, "sílabas")
 
 # Una sílaba
     if i == "v":
