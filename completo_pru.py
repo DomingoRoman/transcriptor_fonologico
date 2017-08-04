@@ -610,4 +610,4 @@ for i in lista_sec_cv:
 # n_v da el número de "v", es decir, el número de sílabas.
 n_v = paso_c16.count("v")
 
-print("La expresión: ",palabra,", tiene",ene_de_fonemas,"fonemas y la composición silábica",paso_c16,"y",n_v,"sílabas.")
+print('La expresión: "',palabra,'"', 'tiene',ene_de_fonemas,'fonemas y la composición silábica',paso_c16,'y',n_v,'sílabas.')
