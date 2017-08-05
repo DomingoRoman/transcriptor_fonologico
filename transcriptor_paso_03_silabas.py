@@ -357,5 +357,5 @@ for i in lista_sec_cv:
         elif i == "c0vcb1vc":
             print("c0vc c1vc")
     elif n_v == 3:
-        print("Es una palabra de sílabas")
+        print("Es una palabra de",n_v,"sílabas")
         
