@@ -266,36 +266,38 @@ largo_lista_sec_cv =len(lista_sec_cv)
 for i in lista_sec_cv:
 #    print(i)
 
-# Una sílaba
-    if i == "v":
-        print("v")
-    if i == "cv": 
-       print("cv")
-    if i == "vc":
-       print("vc")
-    if i == "cvc": 
-       print("cvc")
+    if n_v == 1:
+        if i == "v":
+            print("v")
+        elif i == "cv":
+           print("cv")
+        elif i == "vc":
+           print("vc")
+        elif i == "cvc":
+           print("cvc")
  ## con diptongo
-    if i == "0v": 
-       print("0v")
-    if i == "v0": 
-       print("v0")
-    if i == "0v0": 
-       print("0v0")
-    if i == "c0v0": 
-       print("c0v0")
-    if i == "c1v": 
-       print("c1v")
-    if i == "c1vc": 
-       print("c1vc")
-    if i == "c1v0": 
-       print("c1v0")   
-    if i == "c1v0c": 
-       print("c1v0")
-    if i == "c0v":
-       print("c0v")
-    if i == "c0vc":
-       print("c0vc")
+        elif i == "0v":
+           print("0v")
+        elif i == "v0":
+           print("v0")
+        elif i == "0v0":
+           print("0v0")
+        elif i == "0vc": 
+           print("0vc")    
+        elif i == "c0v0":
+           print("c0v0")
+        elif i == "c1v":
+           print("c1v")
+        elif i == "c1vc":
+           print("c1vc")
+        elif i == "c1v0":
+           print("c1v0")   
+        elif i == "c1v0c":
+           print("c1v0")
+        elif i == "c0v":
+           print("c0v")
+        elif i == "c0vc":
+           print("c0vc")
 # dos sílabas	
     if i == "vv":
         print("v v")
