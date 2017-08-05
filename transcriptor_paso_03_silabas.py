@@ -314,7 +314,7 @@ for i in lista_sec_cv:
 # klaikla
         elif i == "c1v0c1v":
             print("c1v0 c1v")
-    elif i == "c1v0c1vc":
+        elif i == "c1v0c1vc":
             print("c1v0 c1v")
 # klaiklai
         elif i == "c1v0c1v0":
