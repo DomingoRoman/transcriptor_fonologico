@@ -44,8 +44,6 @@ paso_u = paso_o.replace("ú", "u")
 
 # sustituye V por B
 paso_b = paso_u.replace("v", "b")
-# sustituye V por B
-paso_b = palabra.replace("v", "b")
 
 # sustituye C por S
 paso_ce = paso_b.replace("ce", "se")
