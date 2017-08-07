@@ -85,10 +85,20 @@ paso_oy = paso_ey.replace("oy", "oʝ")
 paso_uy = paso_oy.replace("uy", "uʝ")
 paso_iy = paso_uy.replace("iy", "iʝ")
 
-paso_y2 = paso_iy.replace("y", "ʝ")
+paso_ya = paso_iy.replace("ya", "ʝa")
+paso_ye = paso_ya.replace("ye", "ʝi")
+paso_yi = paso_ye.replace("yi", "ʝi")
+paso_yo = paso_yi.replace("yo", "ʝo")
+paso_yu = paso_yo.replace("yu", "ʝu")
+
+paso_ny = paso_yu.replace("ny", "nʝ")
+
+
+paso_y2 = paso_ny.replace("y", "i")
 
 # sustituye LL por Y
 paso_y = paso_y2.replace("ll", "ʝ")
+
 
 # sustituye QU por K
 paso_k = paso_y.replace("qu", "k")
