@@ -1,5 +1,5 @@
 # Continúa del paso 01
-#
+# Ultimo objeto anterior: transcripción_final
 #####################
 ######################
 ####
