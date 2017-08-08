@@ -7,7 +7,7 @@
 ####  1 = líquida combinada
 ####
 ## TRIPTONGOS
-paso_tript_uai = paso_cuenta_fonemas.replace("uai", "0v0")
+paso_tript_uai = transcripción_final.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
 paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
 paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
