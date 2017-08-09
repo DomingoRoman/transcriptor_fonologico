@@ -5,7 +5,7 @@
 ##### Este proyecto tiene los propósitos siguientes:
 #####        transcriptor_01
 ##### 1. Crear una rutina de conversión de código grafemático a
-#####    caracteres fonológicos (alfabeto IPA).
+#####    caracteres fonológicos (IPA).
 #####    Hasta el momento, transcribe bien los segmentos (no pone acentos)
 #####        transcriptor_02
 ##### 2. Convierte consonantes a "c", vocales a "v", líquidas combinadas a "1"
