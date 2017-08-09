@@ -4,12 +4,11 @@
 # Domingo Román
 # Este proyecto tiene los propósitos siguientes:
 # 
+#####        transcriptor_01
 # 1. Crear una rutina de conversión de código grafemático a
 #    caracteres fonológicos (alfabeto IPA).
-######
-#    Hasta el momento, transcribe bien los segmentos.
-#    No pone acentos
-# 2. Actualmente intento hacer un separador silábico a partir de un
-#    listado de tipos de sílabas (cv cvc, etc.) que se pueden encontrar.
-######
-#    En este momento, solo funciona con palabras de una y de dos sílabas.
+#    Hasta el momento, transcribe bien los segmentos (no pone acentos)
+# 2. Convierte consonantes a "c", vocales a "v", líquidas combinadas a "1"
+#    semivocales a "0"
+# 3. Cuenta las sílabas mediante el conteo de las "v" de una cadena como la anterior
+#    y las separa.
