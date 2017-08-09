@@ -21,9 +21,13 @@
 #  MA 02110-1301, USA.
 #
 #    1. Una entrada literal -------------> una transcripción fonológica
+#        una transcripción usa el símbolo t∫ para "che". la otra usa "c"
+#        para tener una transcripción de "che" con un solo símbolo.
+#
 #    2. una transcripción fonológica ----> una secuenca cvcv cvcv cvcvc
+#
 #    3. una secuencia cvcv cvcv cvcvc ---> separada por sílabas
-#    para cada palabra                      cv cv / cv cv / cv cvc     
+#       para cada palabra:  cv cv / cv cv / cv cvc     
 #
 
 palabra = input('escribe unas palabras:   ')
