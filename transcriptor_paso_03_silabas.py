@@ -1,3 +1,11 @@
+# 
+
+# lista_sec_cv entrega palabras codificadas como cvcvcv
+lista_sec_cv = paso_c16.split()
+largo_lista_sec_cv =len(lista_sec_cv)
+
+
+
 # Este FOR servirá para ver dónde está el acento gráfico
 # en la palabra.
 # por el momento no se usa
