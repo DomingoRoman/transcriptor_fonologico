@@ -164,8 +164,8 @@ print(transcripcion_final)
 # El siguiente paso cambia t͡∫ por un solo
 # caracter: "c" para efectos de contar los fonemas
 transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
-paso_cuenta_fonemas_1 = transcripcion_final_c.replace(" ", "")
-ene_de_fonemas = len(paso_cuenta_fonemas_1)
+paso_cuenta_fonemas = transcripcion_final_c.replace(" ", "")
+ene_de_fonemas = len(paso_cuenta_fonemas)
 print(ene_de_fonemas,"fonemas")
 #########################################
 #########################################
