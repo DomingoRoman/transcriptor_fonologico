@@ -156,16 +156,13 @@ paso_excla2 = paso_excla1.replace("!","")
 transcripcion_final = paso_excla2.replace("ü", "u")
 
 # imprime resultado de la transcripción fonológica
-
 print(transcripcion_final)
 
-#########################################
 #########################################
 # El siguiente paso cambia t͡∫ por un solo
 # caracter: "c" para efectos de contar los fonemas
 transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
-paso_cuenta_fonemas = transcripcion_final_c.replace(" ", "")
-ene_de_fonemas = len(paso_cuenta_fonemas)
+transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
+ene_de_fonemas = len(transc_para_contar_fonemas)
 print(ene_de_fonemas,"fonemas")
-#########################################
 #########################################
