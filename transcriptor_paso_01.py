@@ -32,7 +32,7 @@
 
 palabra = input('escribe unas palabras:   ')
 
-# Agrega un especio al final para evitar los AY > ay
+# Agrega un espacio al final para evitar que AY > ay
 espacio_poste = " "
 palabra = palabra + espacio_poste
 
@@ -143,13 +143,20 @@ paso_ñ = paso_rr2.replace("ñ","ɲ")
 paso_h = paso_ñ.replace("h","")
 paso_coma = paso_h.replace(",","")
 paso_pcoma = paso_coma.replace(";","")
-paso_2punt = paso_pcoma.replace(";","")
+paso_2punt = paso_pcoma.replace(":","")
+paso_3punt = paso_2punt.replace("…","")
+paso_3punts = paso_3punt.replace("...","")
+paso_guion = paso_3punts.replace("-","")
+paso_preg1 = paso_guion.replace("¿","")
+paso_preg2 = paso_preg1.replace("?","")
+paso_excla1 = paso_preg2.replace("¡","")
+paso_excla2 = paso_excla1.replace("!","")
 
 # Escribe Ü como u
-transcripcion_final = paso_2punt.replace("ü", "u")
+transcripcion_final = paso_excla2.replace("ü", "u")
 
 # imprime resultado de la transcripción fonológica
-# persiste problema con "y" aislada.
+
 print(transcripcion_final)
 
 #########################################
@@ -159,5 +166,6 @@ print(transcripcion_final)
 transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
 paso_cuenta_fonemas_1 = transcripcion_final_c.replace(" ", "")
 ene_de_fonemas = len(paso_cuenta_fonemas_1)
+print(ene_de_fonemas,"fonemas")
 #########################################
 #########################################
