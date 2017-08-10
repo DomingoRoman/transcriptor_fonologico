@@ -1,17 +1,20 @@
-# 
+# Se recibe del paso anterior
+# la serie cvcv cvccv sobre la cual es hará la separación silábica
+####    print("2. Estructura silábica:", paso_c16)
 
 # lista_sec_cv entrega palabras codificadas como cvcvcv
 lista_sec_cv = paso_c16.split()
+
+print(lista_sec_cv)
 largo_lista_sec_cv =len(lista_sec_cv)
-
-
+print(largo_lista_sec_cv)
 
 # Este FOR servirá para ver dónde está el acento gráfico
 # en la palabra.
 # por el momento no se usa
 
-#for b in lista_palabras:
-#    print("8. ",b)
+for b in lista_palabras:
+    print("8. ",b)
 
 # comienza la separación silábica por la estructura
 
