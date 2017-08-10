@@ -81,10 +81,5 @@ paso_c15 = paso_c14.replace("ʝ","c")
 paso_c16 = paso_c15.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-
-print("1. Tiene", ene_de_fonemas, "fonemas")
 print("2. Estructura silábica:", paso_c16)
 
-# lista_sec_cv entrega palabras codificadas como cvcvcv
-lista_sec_cv = paso_c16.split()
-largo_lista_sec_cv =len(lista_sec_cv)
