@@ -32,12 +32,13 @@
 
 palabra = input('escribe unas palabras:   ')
 
+lista_palabras = palabra.split(" ")
+
 # Agrega un espacio al final para evitar que AY > ay
 espacio_poste = " "
 palabra = palabra + espacio_poste
 
 # Separación por palabras
-lista_palabras = palabra.split(" ")
 
 # Número de palabras de toda la cadena
 n_palabras=len(lista_palabras)
