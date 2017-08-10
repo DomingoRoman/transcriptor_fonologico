@@ -1,4 +1,12 @@
-# Continúa del paso 1
+# # El siguiente paso cambia t͡∫ por un solo
+# caracter: "c" para efectos de contar los fonemas
+# LINEAS ANTERIORES
+## transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
+## paso_cuenta_fonemas_c = transcripcion_final_c.replace(" ", "")
+## ene_de_fonemas = len(paso_cuenta_fonemas_1)
+## print(ene_de_fonemas,"fonemas")
+#########################################
+#########################################Continúa del paso 1
 # Ultimo objeto anterior: transcripción_final
 #####################
 ######################
