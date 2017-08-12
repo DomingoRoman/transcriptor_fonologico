@@ -7,7 +7,7 @@ lista_sec_cv = paso_c16.split()
 
 print(lista_sec_cv)
 largo_lista_sec_cv =len(lista_sec_cv)
-print(largo_lista_sec_cv)
+print("3. sílabas cvcvccv...",lista_sec_cv)
 
 # Este FOR servirá para ver dónde está el acento gráfico
 # en la palabra.
