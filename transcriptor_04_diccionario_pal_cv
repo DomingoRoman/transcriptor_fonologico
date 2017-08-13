@@ -31,11 +31,7 @@ print(dic_palab_secv)
 
 
 for pal,esq_cv in dic_palab_secv.items():
-    print("%s -> %s" %(pal,esq_cv))
-
-
-
-
+    print(pal,"->",esq_cv)
 
 #
 for a in lista_sec_cv:
