@@ -1,0 +1,61 @@
+# Cómo determinar si una palabra es
+# grave, aguda o esdrújula
+
+# escritura de cuatro palabras:
+
+# Variable que existe
+palabra = "taco moí grandé"
+
+# transcripción fonológica:
+
+# Variable que existe:
+transcripcion_final_c = "tako moi gɾande"
+
+# separación de cada palabra (agregar signos de puntuación)
+
+# Variable que existe
+lista_palabras = palabra.split(" ")
+
+# Variable que existe:
+paso_c16 = "cvcv cvvv c1vcv"
+
+# Variable que existe:
+lista_sec_cv = ['cvcv', 'cvvv', 'c1vccv']
+
+# si n_de_v de cada palalabra es igual o mayor de 3
+# entonces evaluar si es esdrújula
+
+dic_palab_secv = {'taco':'cvcv', 'moi':'cvv', 'grandé':'c1vccv', 'moi':'cvv'}
+
+print(dic_palab_secv)
+
+
+for pal,esq_cv in dic_palab_secv.items():
+    print("%s -> %s" %(pal,esq_cv))
+
+
+
+
+
+#
+for a in lista_sec_cv:
+    n_de_voc_en_esquema_cvcvcv = a.count("v")
+    if n_de_voc_en_esquema_cvcvcv >= 3:
+        print(a,"puede (o no) ser esdrújula")
+        
+# evaluacion de esdrujula
+    print(n_de_voc_en_esquema_cvcvcv)
+
+print(lista_palabras)
+print(lista_sec_cv)
+
+for p in lista_palabras:
+    letra_final = p[-1]
+    if (letra_final == "á" or letra_final == "é" or letra_final=="í"
+    or letra_final == "ó" or letra_final == "ú"or letra_final == "n" or
+    letra_final == "s"):
+        punto_de_acento = -1
+        print(punto_de_acento)
+        
+    else:
+        print("Aguda sin acento")
