@@ -25,8 +25,9 @@ lista_sec_cv = ['cvcv', 'cvvv', 'c1vccv']
 # si n_de_v de cada palalabra es igual o mayor de 3
 # entonces evaluar si es esdrújula
 
-dic_palab_secv = {'taco':'cvcv', 'moi':'cvv', 'grandé':'c1vccv', 'moi':'cvv'}
-
+### CREA EL DICCIONARIO ###
+dic_palab_secv = dict(zip(lista_palabras,lista_sec_cv))
+n_entradas_diccio = len(dic_palab_secv)
 print(dic_palab_secv)
 
 
