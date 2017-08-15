@@ -24,17 +24,37 @@ lista_sec_cv = ['cvcv', 'cvvv', 'c1vccv']
 
 # si n_de_v de cada palalabra es igual o mayor de 3
 # entonces evaluar si es esdrújula
+##########################################
+##########################################
+##########################################
+###############           ################
+##########################################
+###### CREA EL DICCIONARIO ###
+## Crea el diccionario a partir de dos listas:
+#  lista de palabras y lista de secuencias cv
+#  Como tal diccionario, no toma en cuenta palabras repetidas
 
-### CREA EL DICCIONARIO ###
 dic_palab_secv = dict(zip(lista_palabras,lista_sec_cv))
+
+# Calcula la longitud del diccionario
 n_entradas_diccio = len(dic_palab_secv)
-print(dic_palab_secv)
+
+# se asumen dos variables: pal (palabra)
+#                          esq_cv (esquema silábico)
 
 
 for pal,esq_cv in dic_palab_secv.items():
+    n_de_v_en_esq_cv = esq_cv.count("v")
+    if n_de_v_en_esq_cv == 1:
+        print("mono")
+    elif n_de_v_en_esq_cv == 2:
+        print("bisílabo")
+    elif n_de_v_en_esq_cv == 3:
+        print("trisílabo")
+    print(n_de_v_en_esq_cv)
     print(pal,"->",esq_cv)
 
-#
+######………………––––––––#########
 for a in lista_sec_cv:
     n_de_voc_en_esquema_cvcvcv = a.count("v")
     if n_de_voc_en_esquema_cvcvcv >= 3:
