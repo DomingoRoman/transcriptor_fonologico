@@ -45,12 +45,18 @@ n_entradas_diccio = len(dic_palab_secv)
 
 for pal,esq_cv in dic_palab_secv.items():
     n_de_v_en_esq_cv = esq_cv.count("v")
-    if n_de_v_en_esq_cv == 1:
-        print("mono")
+
+    if n_de_v_en_esq_cv >= 3:
+        print("trisílabo")
+
+###### revisión de palabras de dos sílabas
     elif n_de_v_en_esq_cv == 2:
         print("bisílabo")
-    elif n_de_v_en_esq_cv == 3:
-        print("trisílabo")
+        letra_final = pal[-1]
+
+    elif n_de_v_en_esq_cv == 1:
+        print("mono")
+
     print(n_de_v_en_esq_cv)
     print(pal,"->",esq_cv)
 
