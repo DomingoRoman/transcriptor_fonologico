@@ -30,6 +30,9 @@
 #       para cada palabra:  cv cv / cv cv / cv cvc     
 #
 
+from collections import defaultdict
+from collections import Counter
+
 palabra = input('escribe unas palabras:   ')
 
 lista_palabras = palabra.split(" ")
