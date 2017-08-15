@@ -40,11 +40,8 @@ palabra = palabra + espacio_poste
 
 # Separación por palabras
 
-print("palabras:",lista_palabras)
 # Número de palabras de toda la cadena
 n_palabras=len(lista_palabras)
-
-print("longitud de lista de palabras",n_palabras)
 
 # poner todo en minúsculas
 palabra = palabra.lower()
@@ -160,7 +157,7 @@ paso_excla2 = paso_excla1.replace("!","")
 transcripcion_final = paso_excla2.replace("ü", "u")
 
 # imprime resultado de la transcripción fonológica
-print(transcripcion_final)
+
 
 #########################################
 # El siguiente paso cambia t͡∫ por un solo
@@ -168,7 +165,7 @@ print(transcripcion_final)
 transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
 transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
 ene_de_fonemas = len(transc_para_contar_fonemas)
-print(ene_de_fonemas,"fonemas")
+
 #########################################
 
 ###############################################################
@@ -255,7 +252,7 @@ paso_c15 = paso_c14.replace("ʝ","c")
 paso_c16 = paso_c15.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-print("2. Estructura silábica:", paso_c16)
+
 
 # Se recibe del paso anterior
 # la serie cvcv cvccv sobre la cual es hará la separación silábica
@@ -263,10 +260,20 @@ print("2. Estructura silábica:", paso_c16)
 
 # lista_sec_cv entrega palabras codificadas como cvcvcv
 lista_sec_cv = paso_c16.split()
-
-print(lista_sec_cv)
 largo_lista_sec_cv = len(lista_sec_cv)
-print(largo_lista_sec_cv)
 
-for b in lista_palabras:
-    print("palabra textual: ... ",b)
+
+### CREA DICCIONARIO palabra-estructura silábica
+dic_palab_secv = dict(zip(lista_palabras,lista_sec_cv))
+n_entradas_diccio = len(dic_palab_secv)
+
+
+
+print("texto:", palabra)
+print("Transcripción:", transcripcion_final)
+print("Nº de fonemas:", ene_de_fonemas)
+print("Nº de palabras",n_palabras)
+
+print("palabra -> estructura")
+for pal,esq_cv in dic_palab_secv.items():
+    print(pal,"->",esq_cv)
