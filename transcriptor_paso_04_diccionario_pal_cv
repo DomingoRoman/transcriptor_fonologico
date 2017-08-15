@@ -47,7 +47,7 @@ for pal,esq_cv in dic_palab_secv.items():
     n_de_v_en_esq_cv = esq_cv.count("v")
 
     if n_de_v_en_esq_cv >= 3:
-        print("trisílabo")
+        print("trisílabo (o más)")
 
 ###### revisión de palabras de dos sílabas
     elif n_de_v_en_esq_cv == 2:
