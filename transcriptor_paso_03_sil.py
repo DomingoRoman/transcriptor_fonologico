@@ -3,7 +3,7 @@
 ####    print("Estructura silábica:", estructura_silabica)
 
 # lista_sec_cv entrega palabras codificadas como cvcvcv
-lista_sec_cv = paso_c16.split()
+lista_sec_cv = estructura_silabica.split()
 
 print(lista_sec_cv)
 largo_lista_sec_cv =len(lista_sec_cv)
@@ -17,6 +17,8 @@ print("3. sílabas cvcvccv...",lista_sec_cv)
 for v in lista_sec_cv:
     n_v_palabras = v.count("v")
 
+dic_estruccv_ndev = dict(zip(lista_sec_cv,n_v_palabras))  
+    
     
 # comienza la separación silábica por la estructura
 
