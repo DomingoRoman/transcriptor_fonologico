@@ -29,7 +29,6 @@
 #    3. una secuencia cvcv cvcv cvcvc ---> separada por sílabas
 #       para cada palabra:  cv cv / cv cv / cv cvc     
 #
-
 from collections import defaultdict
 from collections import Counter
 
@@ -101,12 +100,10 @@ paso_yu = paso_yo.replace("yu", "ʝu")
 
 paso_ny = paso_yu.replace("ny", "nʝ")
 
-
 paso_y2 = paso_ny.replace("y", "i")
 
 # sustituye LL por Y
 paso_y = paso_y2.replace("ll", "ʝ")
-
 
 # sustituye QU por K
 paso_k = paso_y.replace("qu", "k")
@@ -122,7 +119,6 @@ paso_gi = paso_ge.replace("gui","gi")
 paso_rr1 = paso_gi.replace("rr","00")
 
 # sustituye casos de ERE
-
 paso_r1 = paso_rr1.replace("ar","aɾ")
 paso_r2 = paso_r1.replace("er","eɾ")
 paso_r3 = paso_r2.replace("ir","iɾ")
@@ -143,7 +139,7 @@ paso_rr2 = paso_r13.replace("00","r")
 # sustituye EÑE
 paso_ñ = paso_rr2.replace("ñ","ɲ")
 
-# Borra H
+# Borra H y otros caracteres como ", ; :" etc.
 paso_h = paso_ñ.replace("h","")
 paso_coma = paso_h.replace(",","")
 paso_pcoma = paso_coma.replace(";","")
@@ -163,9 +159,10 @@ transcripcion_final = paso_excla2.replace("ü", "u")
 print(transcripcion_final)
 
 #########################################
-# El siguiente paso cambia t͡∫ por un solo
-# caracter: "c" para efectos de contar los fonemas
+# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
 transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
+
+# Elimina espacios en blanco para contar fonemas
 transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
 ene_de_fonemas = len(transc_para_contar_fonemas)
 print(ene_de_fonemas,"fonemas")
