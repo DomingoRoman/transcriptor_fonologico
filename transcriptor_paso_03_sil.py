@@ -14,9 +14,10 @@ print("3. sílabas cvcvccv...",lista_sec_cv)
 # por el momento no se usa
 # PROBLEMA este comando FOR entrega una línea más de las deseables
 
-for b in lista_palabras:
-    print("8. ",b)
+for v in lista_sec_cv:
+    n_v_palabras = v.count("v")
 
+    
 # comienza la separación silábica por la estructura
 
 for i in lista_sec_cv:
