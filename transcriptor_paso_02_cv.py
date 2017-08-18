@@ -16,7 +16,7 @@
 ####  0 = semivocal o semiconsonante
 ####  1 = líquida combinada
 ####
-## TRIPTONGOS
+## Estructuras silábicas con triptongos
 paso_tript_uai = transcripcion_final_c.replace("uai", "0v0")
 paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
 paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
@@ -24,7 +24,7 @@ paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
 paso_tript_iau = paso_tript_uau.replace("iau", "0v0")
 paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
 
-## DIPTONGOS
+## Estructuras silábicas con diptongos
 paso_dipt_ui = paso_tript_uei.replace("ui", "v0")
 paso_dipt_iu = paso_dipt_ui.replace("iu", "v0")
 paso_dipt_ai = paso_dipt_iu.replace("ai", "v0")
@@ -78,8 +78,6 @@ paso_c12 = paso_c11.replace("ɾ","c")
 paso_c13 = paso_c12.replace("s","c")
 paso_c14 = paso_c13.replace("t","c")
 paso_c15 = paso_c14.replace("ʝ","c")
-paso_c16 = paso_c15.replace("r","c")
+estructura_silabica = paso_c15.replace("r","c")
 
 # Esta es la serie cv cv cv sobre la cual es hará la clasificación
-print("2. Estructura silábica:", paso_c16)
-
