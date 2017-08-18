@@ -3,7 +3,7 @@
 #
 #  # transcriptor_fonologico
 #  
-#  Copyright 2017 mapa <mapa@jules>
+#  Copyright 2017 Laboratorio de Fonética USACH
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -20,6 +20,9 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #
+#  Este programa realiza una transcripción fonológica a partir de
+#     un texto escrito.
+
 #    1. Una entrada literal -------------> una transcripción fonológica
 #        una transcripción usa el símbolo t∫ para "che". la otra usa "c"
 #        para tener una transcripción de "che" con un solo símbolo.
