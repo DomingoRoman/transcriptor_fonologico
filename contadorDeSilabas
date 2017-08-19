@@ -1,0 +1,29 @@
+cadena_lit = "la casa de mi mamá"
+cadena_fon = "la kasa de mi mama"
+cadena_cvc = "cv cvcv cv cv cvcv"
+
+lista_pal= cadena_lit.split()
+n_de_pal_listapal = len(lista_pal)
+lista_cvc = cadena_cvc.split()
+n_de_pal_cvc = len(lista_cvc)
+
+lista_n_de_silabas = []
+
+for aaa in (lista_cvc):
+    n_v = aaa.count("v")
+    print(aaa,n_v)
+    lista_n_de_silabas.append(n_v)
+
+ 
+print(lista_pal)
+print(lista_cvc)
+print(n_de_pal_listapal)
+print(lista_n_de_silabas)
+
+
+dic_pal_estrSil = dict(zip(lista_pal,lista_cvc))
+
+dic_pal_estrNsil = dict(zip(lista_pal,lista_n_de_silabas))
+
+print(dic_pal_estrSil)
+print(dic_pal_estrNsil)
