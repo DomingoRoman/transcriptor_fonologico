@@ -172,4 +172,5 @@ ene_de_fonemas_dif = len(set_transcrip_c)
 #########################################
 
 print(transcripcion_final)
+print(transc_para_contar_fonemas)
 print(ene_de_fonemas, ene_de_fonemas_dif)
