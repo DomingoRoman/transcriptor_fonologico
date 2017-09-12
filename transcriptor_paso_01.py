@@ -169,9 +169,11 @@ set_transcrip_c = set(transc_para_contar_fonemas)
 ene_de_fonemas_dif = len(set_transcrip_c)
 #########################################
 ### Tres impresiones a pantalla: 
-###  a) transcripción
-###  b) transcripción sin espacio
-###  c) número de fonemas  y de fonemas diferentes
+###  a) transcripción IPA
+###  b) transcripción cambiando [t∫] por [c]
+###  c) transcripción de b) sin espacio
+###  d) número de fonemas y de fonemas diferentes
 print(transcripcion_final)
+print(transcripcion_final_c)
 print(transc_para_contar_fonemas)
 print(ene_de_fonemas, ene_de_fonemas_dif)
