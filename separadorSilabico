@@ -1,0 +1,78 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  separadorSilabico.py
+#  
+#  Copyright 2017 Pedro Domingo Roman <historiadores@iMac-de-Pedro.local>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+#  
+
+estructura_silabica_palabras = ("v v c1vcvc cv cv c0vccv cvc c0vc cvcv cvc0vcv")
+
+estructura_silabica_cadena = ("c0vvc1vcvccvcvc0vccvcvcc0vccvcvcvc0vcv")
+
+largo = len(estructura_silabica_cadena)
+print(largo)
+
+
+caracter1 = estructura_silabica_cadena[0]
+caracter2 = estructura_silabica_cadena[1]
+caracter3 = estructura_silabica_cadena[2]
+caracter4 = estructura_silabica_cadena[3]
+caracter5 = estructura_silabica_cadena[5]
+
+# ae
+if caracter1 == "v" and caracter2 == "v":
+    s1 = "s1 = v"
+    porcion2 = estructura_silabica_cadena[1:largo]
+
+# aco
+elif caracter1 == "v" and caracter2 == "c" and caracter3 == "v":
+    s1 = "s1 = v"
+    porcion2 = estructura_silabica_cadena[1:largo]
+
+# cae
+elif caracter1 == "c" and caracter2 == "v" and caracter3 == "v":
+    s1 = "s1 = cv"
+    porcion2 = estructura_silabica_cadena[2:largo]
+
+# cacl
+elif caracter1 == "c" and caracter2 == "v" and caracter3 == "c" and caracter4 == "1":
+    s1 = "s1 = cv"
+    porcion2 = estructura_silabica_cadena[2:largo]
+
+#cuae
+elif caracter1 == "c" and caracter2 == "0" and caracter3 == "v" and caracter4 == "v":
+    s1 = "s1 = cv0"
+    porcion2 = estructura_silabica_cadena[3:largo]
+
+#cauc-
+elif caracter1 == "c" and caracter2 == "v" and caracter3 == "0" and caracter4 == "c":
+    s1 = "s1 = cv0"
+    porcion2 = estructura_silabica_cadena[3:largo]
+
+# cuan-d
+elif caracter1 == "c" and caracter2 == "0" and caracter3 == "v" and caracter4 == "c" and caracter5 == "c":
+    s1 = "s1 = cv0c"
+    porcion2 = estructura_silabica_cadena[3:largo]
+#cua-no
+elif caracter1 == "c" and caracter2 == "0" and caracter3 == "v" and caracter4 == "c" and caracter5 == "v":
+    s1 = "s1 = cv0"
+    porcion2 = estructura_silabica_cadena[2:largo]
+
+print(s1, porcion2)
