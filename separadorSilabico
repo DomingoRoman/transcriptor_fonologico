@@ -23,23 +23,23 @@
 #  
 
 estructura_silabica_palabras = ("v v c1vcvc cv cv c0vccv cvc c0vc cvcv cvc0vcv")
-
 estructura_silabica_cadena = ("c0vvc1vcvccvcvc0vccvcvcc0vccvcvcvc0vcv")
-
+ndesilabas =estructura_silabica_cadena.count("v")
 largo = len(estructura_silabica_cadena)
 print(largo)
+print(ndesilabas)
 
-
-caracter1 = estructura_silabica_cadena[0]
-caracter2 = estructura_silabica_cadena[1]
-caracter3 = estructura_silabica_cadena[2]
-caracter4 = estructura_silabica_cadena[3]
-caracter5 = estructura_silabica_cadena[5]
+if largo <= 5: 
+    caracter1 = estructura_silabica_cadena[0]
+    caracter2 = estructura_silabica_cadena[1]
+    caracter3 = estructura_silabica_cadena[2]
+    caracter4 = estructura_silabica_cadena[3]
+    caracter5 = estructura_silabica_cadena[5]
 
 # ae
-if caracter1 == "v" and caracter2 == "v":
-    s1 = "s1 = v"
-    porcion2 = estructura_silabica_cadena[1:largo]
+    if caracter1 == "v" and caracter2 == "v":
+        s1 = "s1 = v"
+        porcion2 = estructura_silabica_cadena[1:largo]
 
 # aco
 elif caracter1 == "v" and caracter2 == "c" and caracter3 == "v":
