@@ -144,23 +144,31 @@ paso_ñ = paso_rr2.replace("ñ","ɲ")
 
 # Borra H y otros caracteres como ", ; :" etc.
 paso_h = paso_ñ.replace("h","")
-paso_coma = paso_h.replace(",","")
-paso_pcoma = paso_coma.replace(";","")
-paso_2punt = paso_pcoma.replace(":","")
-paso_3punt = paso_2punt.replace("…","")
-paso_3punts = paso_3punt.replace("...","")
-paso_guion = paso_3punts.replace("-","")
-paso_preg1 = paso_guion.replace("¿","")
-paso_preg2 = paso_preg1.replace("?","")
-paso_excla1 = paso_preg2.replace("¡","")
-paso_excla2 = paso_excla1.replace("!","")
 
 # Escribe Ü como u
-transcripcion_final = paso_excla2.replace("ü", "u")
+transcripcion_final_ipa = paso_h.replace("ü", "u")
+
+# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
+transcripcion_final_c = transcripcion_final_ipa.replace("t͡∫","c")
+
+print(transcripcion_final_ipa)
+print(transcripcion_final_c)
+
+paso_coma = transcripcion_final_c.replace(",","|")
+paso_punto = paso_coma.replace(".","||")
+paso_pcoma = paso_coma.replace(";","||")
+paso_2punt = paso_pcoma.replace(":","|")
+paso_3punt = paso_2punt.replace("…","|")
+paso_3punts = paso_3punt.replace("...","|")
+paso_guion = paso_3punts.replace("-","|")
+paso_preg1 = paso_guion.replace("¿","|")
+paso_preg2 = paso_preg1.replace("?","|")
+paso_excla1 = paso_preg2.replace("¡","|")
+paso_excla2 = paso_excla1.replace("!","|")
+paso_parent1 = paso_excla2.replace("(","|")
+paso_parent2 = paso_parent1.replace(")","|")
 
 #########################################
-# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
-transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
 
 # Elimina espacios en blanco para contar fonemas
 transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
