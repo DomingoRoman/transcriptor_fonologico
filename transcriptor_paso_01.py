@@ -148,32 +148,50 @@ paso_h = paso_ñ.replace("h","")
 # Escribe Ü como u
 transcripcion_final_ipa = paso_h.replace("ü", "u")
 
-# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
-transcripcion_final_c = transcripcion_final_ipa.replace("t͡∫","c")
+# Elimina espacios en blanco para contar fonemas
+transc_ipa_sin_espacios = transcripcion_final_ipa.replace(" ", "")
 
-print(transcripcion_final_ipa)
-print(transcripcion_final_c)
-
-paso_coma = transcripcion_final_c.replace(",","|")
-paso_punto = paso_coma.replace(".","||")
-paso_pcoma = paso_coma.replace(";","||")
-paso_2punt = paso_pcoma.replace(":","|")
-paso_3punt = paso_2punt.replace("…","|")
-paso_3punts = paso_3punt.replace("...","|")
-paso_guion = paso_3punts.replace("-","|")
+# Se ponen las pausas
+paso_coma = transc_ipa_sin_espacios.replace(",","|")
+paso_punto = paso_coma.replace(".","‖ ")
+paso_pcoma = paso_punto.replace(";","‖ ")
+paso_2punt = paso_pcoma.replace(":","| ")
+paso_3punt = paso_2punt.replace("…","| ")
+paso_3punts = paso_3punt.replace("...","| ")
+paso_guion = paso_3punts.replace("-","| ")
 paso_preg1 = paso_guion.replace("¿","|")
-paso_preg2 = paso_preg1.replace("?","|")
-paso_excla1 = paso_preg2.replace("¡","|")
-paso_excla2 = paso_excla1.replace("!","|")
-paso_parent1 = paso_excla2.replace("(","|")
-paso_parent2 = paso_parent1.replace(")","|")
+paso_preg2 = paso_preg1.replace("?","‖ ")
+paso_excla1 = paso_preg2.replace("¡","| ")
+paso_excla2 = paso_excla1.replace("!","‖ ")
+paso_parent1 = paso_excla2.replace("(","| ")
+transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
+
+print(transcripcion_final_ipa_pausas)
+
+# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
+transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
+
+a_paso_coma = transcripcion_final_c.replace(",","|")
+a_paso_punto = a_paso_coma.replace(".","‖")
+a_paso_pcoma = a_paso_punto.replace(";","‖")
+a_paso_2punt = a_paso_pcoma.replace(":","|")
+a_paso_3punt = a_paso_2punt.replace("…","|")
+a_paso_3punts = a_paso_3punt.replace("...","|")
+a_paso_guion = a_paso_3punts.replace("-","|")
+a_paso_preg1 = a_paso_guion.replace("¿","|")
+a_paso_preg2 = a_paso_preg1.replace("?","‖")
+a_paso_excla1 = a_paso_preg2.replace("¡","|")
+a_paso_excla2 = a_paso_excla1.replace("!","‖")
+a_paso_parent1 = a_paso_excla2.replace("(","|")
+a_paso_parent2 = a_paso_parent1.replace(")","|")
 
 #########################################
 
 # Elimina espacios en blanco para contar fonemas
-transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
-ene_de_fonemas = len(transc_para_contar_fonemas)
-set_transcrip_c = set(transc_para_contar_fonemas)
+print(transcripcion_final_c)
+
+ene_de_fonemas = len(transcripcion_final_c)
+set_transcrip_c = set(transcripcion_final_c)
 ene_de_fonemas_dif = len(set_transcrip_c)
 #########################################
 ### Tres impresiones a pantalla: 
@@ -181,7 +199,5 @@ ene_de_fonemas_dif = len(set_transcrip_c)
 ###  b) transcripción cambiando [t∫] por [c]
 ###  c) transcripción de b) sin espacio
 ###  d) número de fonemas y de fonemas diferentes
-print(transcripcion_final)
-print(transcripcion_final_c)
-print(transc_para_contar_fonemas)
+
 print(ene_de_fonemas, ene_de_fonemas_dif)
