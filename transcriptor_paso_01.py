@@ -166,11 +166,12 @@ paso_excla2 = paso_excla1.replace("!","‖ ")
 paso_parent1 = paso_excla2.replace("(","| ")
 transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
 
-print(transcripcion_final_ipa_pausas)
 
 # El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
+# El objeto -transcripcion_final_c- es útil para cómputos y conversiones
 transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
 
+# Convierte signos de puntuación en símbolos de pausas.
 a_paso_coma = transcripcion_final_c.replace(",","|")
 a_paso_punto = a_paso_coma.replace(".","‖")
 a_paso_pcoma = a_paso_punto.replace(";","‖")
@@ -185,19 +186,10 @@ a_paso_excla2 = a_paso_excla1.replace("!","‖")
 a_paso_parent1 = a_paso_excla2.replace("(","|")
 a_paso_parent2 = a_paso_parent1.replace(")","|")
 
-#########################################
-
-# Elimina espacios en blanco para contar fonemas
-print(transcripcion_final_c)
-
+##
 ene_de_fonemas = len(transcripcion_final_c)
 set_transcrip_c = set(transcripcion_final_c)
 ene_de_fonemas_dif = len(set_transcrip_c)
-#########################################
-### Tres impresiones a pantalla: 
-###  a) transcripción IPA
-###  b) transcripción cambiando [t∫] por [c]
-###  c) transcripción de b) sin espacio
-###  d) número de fonemas y de fonemas diferentes
 
+print(transcripcion_final_ipa_pausas)
 print(ene_de_fonemas, ene_de_fonemas_dif)
