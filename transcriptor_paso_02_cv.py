@@ -1,13 +1,10 @@
-###############################################################
-######################################### Continúa del paso 1
-###############################################################
-####### LINEAS ANTERIORES
-# # El siguiente paso cambia t͡∫ por un solo
-# caracter: "c" para efectos de contar los fonemas
-### transcripcion_final_c = transcripcion_final.replace("t͡∫","c")
-### transc_para_contar_fonemas = transcripcion_final_c.replace(" ", "")
-### ene_de_fonemas = len(transc_para_contar_fonemas)
-### print(ene_de_fonemas,"fonemas")
+##
+# ene_de_fonemas = len(transcripcion_final_c)
+# set_transcrip_c = set(transcripcion_final_c)
+# ene_de_fonemas_dif = len(set_transcrip_c)
+
+# print(transcripcion_final_ipa_pausas)
+# print(ene_de_fonemas, ene_de_fonemas_dif)
 
 # Ultimo objeto anterior: transcripción_final
 #####################
