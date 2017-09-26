@@ -71,10 +71,22 @@ paso_c16 = paso_c15.replace("I","v")
 paso_c17 = paso_c16.replace("U","v")
 
 estructura_silabica_palabras = paso_c17.replace("r","c")
+
+transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("I", "i")
+transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("U", "u")
+
+transcripcion_final_c = transcripcion_final_c.replace("I", "i")
+transcripcion_final_c = transcripcion_final_c.replace("U", "u")
+
 estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
 
+print(transcripcion_final_ipa_pausas)
+print(transcripcion_final_c)
 print(estructura_silabica_palabras)
 print(estructura_silabica_cadena)
+
+
+
 
 
 # Estas son las dos series cv cv cv sobre las cuales se hará la separación silábica
