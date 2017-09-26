@@ -1,8 +1,4 @@
-# Se recibe del paso anterior
-# la serie cvcv cvccv sobre la cual es hará la separación silábica
-####    print("Estructura silábica:", estructura_silabica)
-
-# lista_sec_cv entrega palabras codificadas como cvcvcv
+#### paso 3
 lista_sec_cv = estructura_silabica.split()
 
 print(lista_sec_cv)
