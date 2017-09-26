@@ -54,9 +54,9 @@ palabra = palabra.lower()
 # Elimina acentos
 paso_a = palabra.replace("á", "a")
 paso_e = paso_a.replace("é", "e")
-paso_i = paso_e.replace("í", "i")
+paso_i = paso_e.replace("í", "I")
 paso_o = paso_i.replace("ó", "o")
-paso_u = paso_o.replace("ú", "u")
+paso_u = paso_o.replace("ú", "U")
 
 # sustituye V por B
 paso_b = paso_u.replace("v", "b")
