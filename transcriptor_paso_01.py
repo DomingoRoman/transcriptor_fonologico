@@ -150,6 +150,7 @@ transcripcion_final_ipa = paso_h.replace("ü", "u")
 
 # Elimina espacios en blanco para contar fonemas
 transc_ipa_sin_espacios = transcripcion_final_ipa.replace(" ", "")
+transc_ipa_con_espacios = transcripcion_final_ipa
 
 # Se ponen las pausas
 paso_coma = transc_ipa_sin_espacios.replace(",","|")
@@ -192,4 +193,5 @@ set_transcrip_c = set(transcripcion_final_c)
 ene_de_fonemas_dif = len(set_transcrip_c)
 
 print(transcripcion_final_ipa_pausas)
+print(transc_ipa_con_espacios)
 print(ene_de_fonemas, ene_de_fonemas_dif)
