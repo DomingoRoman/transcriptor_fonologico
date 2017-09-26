@@ -1,15 +1,6 @@
-##
-# ene_de_fonemas = len(transcripcion_final_c)
-# set_transcrip_c = set(transcripcion_final_c)
-# ene_de_fonemas_dif = len(set_transcrip_c)
-
-# print(transcripcion_final_ipa_pausas)
-# print(ene_de_fonemas, ene_de_fonemas_dif)
-
-# Ultimo objeto anterior: transcripción_final
-#####################
+## --- PASO 2---
 ######################
-####
+####. Las I y las U se convierten en "v".
 ####  0 = semivocal o semiconsonante
 ####  1 = líquida combinada
 ####
@@ -84,5 +75,6 @@ estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
 
 print(estructura_silabica_palabras)
 print(estructura_silabica_cadena)
+
 
 # Estas son las dos series cv cv cv sobre las cuales se hará la separación silábica
