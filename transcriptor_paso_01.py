@@ -35,24 +35,24 @@
 from collections import defaultdict
 from collections import Counter
 
-palabra = input('escribe unas palabras:   ')
+texto = input('escribe unas palabras:   ')
 
-lista_palabras = palabra.split(" ")
+lista_texto = texto.split(" ")
 
 # Agrega un espacio al final para evitar que AY > ay
 espacio_poste = " "
-palabra = palabra + espacio_poste
+texto = texto + espacio_poste
 
 # Separación por palabras
 
 # Número de palabras de toda la cadena
-n_palabras=len(lista_palabras)
+n_palabras=len(lista_texto)
 
 # poner todo en minúsculas
-palabra = palabra.lower()
+texto1 = texto.lower()
 
 # Elimina acentos
-paso_a = palabra.replace("á", "a")
+paso_a = texto1.replace("á", "a")
 paso_e = paso_a.replace("é", "e")
 paso_i = paso_e.replace("í", "I")
 paso_o = paso_i.replace("ó", "o")
@@ -167,7 +167,6 @@ paso_excla2 = paso_excla1.replace("!","‖ ")
 paso_parent1 = paso_excla2.replace("(","| ")
 transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
 
-
 # El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
 # El objeto -transcripcion_final_c- es útil para cómputos y conversiones
 transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
@@ -192,6 +191,40 @@ ene_de_fonemas = len(transcripcion_final_c)
 set_transcrip_c = set(transcripcion_final_c)
 ene_de_fonemas_dif = len(set_transcrip_c)
 
+# Se ponen las pausas
+b_paso_coma = transc_ipa_con_espacios.replace(",","|")
+b_paso_3punts = b_paso_coma.replace("...","| ")
+b_paso_3punt = b_paso_3punts.replace("…","| ")
+b_paso_punto = b_paso_3punt.replace(".","‖ ")
+b_paso_pcoma = b_paso_punto.replace(";","‖ ")
+b_paso_2punt = b_paso_pcoma.replace(":","| ")
+b_paso_guion = b_paso_2punt.replace("-","| ")
+b_paso_preg1 = b_paso_guion.replace("¿","|")
+b_paso_preg2 = b_paso_preg1.replace("?","‖ ")
+b_paso_excla1 = b_paso_preg2.replace("¡","| ")
+b_paso_excla2 = b_paso_excla1.replace("!","‖ ")
+b_paso_parent1 = b_paso_excla2.replace("(","| ")
+b_transcripcion_final_ipa_pausas = b_paso_parent1.replace(")","|")
+
+# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
+# El objeto -transcripcion_final_c- es útil para cómputos y conversiones
+b_transcripcion_final_c = b_transcripcion_final_ipa_pausas.replace("t͡∫","c")
+
+# Convierte signos de puntuación en símbolos de pausas.
+b_paso_coma = transcripcion_final_c.replace(",","|")
+b_paso_punto = b_paso_coma.replace(".","‖")
+b_paso_pcoma = b_paso_punto.replace(";","‖")
+b_paso_2punt = b_paso_pcoma.replace(":","|")
+b_paso_3punt = b_paso_2punt.replace("…","|")
+b_paso_3punts = b_paso_3punt.replace("...","|")
+b_paso_guion = b_paso_3punts.replace("-","|")
+b_paso_preg1 = b_paso_guion.replace("¿","|")
+b_paso_preg2 = b_paso_preg1.replace("?","‖")
+b_paso_excla1 = b_paso_preg2.replace("¡","|")
+b_paso_excla2 = b_paso_excla1.replace("!","‖")
+b_paso_parent1 = b_paso_excla2.replace("(","|")
+b_paso_parent2 = b_paso_parent1.replace(")","|")
+
 print(transcripcion_final_ipa_pausas)
-print(transc_ipa_con_espacios)
+print(b_transcripcion_final_ipa_pausas)
 print(ene_de_fonemas, ene_de_fonemas_dif)
