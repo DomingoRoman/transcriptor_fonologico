@@ -76,8 +76,10 @@ paso_c12 = paso_c11.replace("ɾ","c")
 paso_c13 = paso_c12.replace("s","c")
 paso_c14 = paso_c13.replace("t","c")
 paso_c15 = paso_c14.replace("ʝ","c")
+paso_c16 = paso_c15.replace("I","v")
+paso_c17 = paso_c16.replace("U","v")
 
-estructura_silabica_palabras = paso_c15.replace("r","c")
+estructura_silabica_palabras = paso_c17.replace("r","c")
 estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
 
 print(estructura_silabica_palabras)
