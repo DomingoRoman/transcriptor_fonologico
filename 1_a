@@ -2,13 +2,13 @@
 # en la transcripción con espacios
 # primero dos signos seguidos
 
-s_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","‖")
-s_e_paso_pcoma_inte = s_e_paso_coma_inte.replace("; ¿","‖")
-s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","‖")
-s_e_paso_coma_excl = s_e_paso_pcoma_inte.replace(", ¡","‖")
-s_e_paso_pcoma_excl = s_e_paso_coma_excl.replace("; ¡","‖")
-s_e_paso_p_excla = s_e_paso_pcoma_excl.replace(". ¡","‖")
-s_e_paso_coma = s_e_paso_p_excla.replace(",","|")
+s_e_paso_coma_inte = transc_ipa_sin_espacios.replace(", ¿","‖ ")
+s_e_paso_pcoma_inte = s_e_paso_coma_inte.replace("; ¿","‖ ")
+s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","‖ ")
+s_e_paso_coma_excl = s_e_paso_pcoma_inte.replace(", ¡","‖ ")
+s_e_paso_pcoma_excl = s_e_paso_coma_excl.replace("; ¡","‖ ")
+s_e_paso_p_excla = s_e_paso_pcoma_excl.replace(". ¡","‖ ")
+s_e_paso_coma = s_e_paso_p_excla.replace(",","| ")
 s_e_paso_punto = s_e_paso_coma.replace(".","‖ ")
 s_e_paso_pcoma = s_e_paso_punto.replace(";","‖ ")
 s_e_paso_2punt = s_e_paso_pcoma.replace(":","| ")
@@ -22,34 +22,77 @@ s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
 s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
 
 # signos individuales
-s_e_paso_coma = s_e_paso_parent1.replace(",","|")
-s_e_paso_punto = s_e_paso_coma.replace(".","‖")
-s_e_paso_pcoma = s_e_aso_punto.replace(";","‖")
-s_e_paso_2punt = s_e_paso_pcoma.replace(":","|")
-s_e_paso_3punt = s_e_paso_2punt.replace("…","|")
-s_e_paso_3punts = s_e_paso_3punt.replace("...","|")
-s_e_paso_guion = s_e_paso_3punts.replace("-","|")
-s_e_paso_preg1 = s_e_paso_guion.replace("¿","|")
-s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖")
-s_e_paso_excla1 = s_e_paso_preg2.replace("¡","|")
-s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖")
-s_e_paso_parent1 = s_e_paso_excla2.replace("(","|")
-s_e_paso_parent2 = s_e_paso_parent1.replace(")","|")
-s_e_transcripcion_final_ipa_pausas = s_e_paso_parent2.replace(")","|")
+s_e_paso_coma = s_e_paso_parent1.replace(",","| ")
+s_e_paso_punto = s_e_paso_coma.replace(".","‖ ")
+s_e_paso_pcoma = s_e_paso_punto.replace(";","‖ ")
+s_e_paso_2punt = s_e_paso_pcoma.replace(":","| ")
+s_e_paso_3punt = s_e_paso_2punt.replace("…","| ")
+s_e_paso_3punts = s_e_paso_3punt.replace("...","| ")
+s_e_paso_guion = s_e_paso_3punts.replace("-","| ")
+s_e_paso_preg1 = s_e_paso_guion.replace("¿","| ")
+s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖ ")
+s_e_paso_excla1 = s_e_paso_preg2.replace("¡","| ")
+s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
+s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
+s_e_paso_parent2 = s_e_paso_parent1.replace(")","| ")
+s_e_transcripcion_final_ipa_pausas = s_e_paso_parent2.replace(")","| ")
 
 
 ##### ================ ################################
+##### ================ ################################
+#####   con espacios   ################################
+c_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","‖ ")
+c_e_paso_pcoma_inte = c_e_paso_coma_inte.replace("; ¿","‖ ")
+c_e_paso_pcoma_inte = c_e_paso_pcoma_inte.replace(". ¿","‖ ")
+c_e_paso_coma_excl = c_e_paso_pcoma_inte.replace(", ¡","‖ ")
+c_e_paso_pcoma_excl = c_e_paso_coma_excl.replace("; ¡","‖ ")
+c_e_paso_p_excla = c_e_paso_pcoma_excl.replace(". ¡","‖ ")
+c_e_paso_coma = c_e_paso_p_excla.replace(",","| ")
+c_e_paso_punto = c_e_paso_coma.replace(".","‖ ")
+c_e_paso_pcoma = c_e_paso_punto.replace(";","‖ ")
+c_e_paso_2punt = c_e_paso_pcoma.replace(":","| ")
+c_e_paso_3punt = c_e_paso_2punt.replace("…","| ")
+c_e_paso_3punts = c_e_paso_3punt.replace("...","| ")
+c_e_paso_guion = c_e_paso_3punts.replace("-","| ")
+c_e_paso_preg1 = c_e_paso_guion.replace("¿","|")
+c_e_paso_preg2 = c_e_paso_preg1.replace("?","‖ ")
+c_e_paso_excla1 = c_e_paso_preg2.replace("¡","| ")
+c_e_paso_excla2 = c_e_paso_excla1.replace("!","‖ ")
+c_e_paso_parent1 = c_e_paso_excla2.replace("(","| ")
+
+# signos individuales
+c_e_paso_coma = c_e_paso_parent1.replace(",","| ")
+c_e_paso_punto = c_e_paso_coma.replace(".","‖ ")
+c_e_paso_pcoma = c_e_paso_punto.replace(";","‖ ")
+c_e_paso_2punt = c_e_paso_pcoma.replace(":","| ")
+c_e_paso_3punt = c_e_paso_2punt.replace("…","| ")
+c_e_paso_3punts = c_e_paso_3punt.replace("...","| ")
+c_e_paso_guion = c_e_paso_3punts.replace("-","| ")
+c_e_paso_preg1 = c_e_paso_guion.replace("¿","| ")
+c_e_paso_preg2 = c_e_paso_preg1.replace("?","‖ ")
+c_e_paso_excla1 = c_e_paso_preg2.replace("¡","| ")
+c_e_paso_excla2 = c_e_paso_excla1.replace("!","‖ ")
+c_e_paso_parent1 = c_e_paso_excla2.replace("(","| ")
+c_e_paso_parent2 = c_e_paso_parent1.replace(")","| ")
+c_e_transcripcion_final_ipa_pausas = c_e_paso_parent2.replace(")","| ")
+
+
+
+
+
 
 # El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
 # El objeto -transcripcion_final_c- es útil para cómputos y conversiones
 transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
+ene_de_fonemas = len(transcripcion_final_c)
+set_transcrip_c = set(transcripcion_final_c)
+ene_de_fonemas_dif = len(set_transcrip_c)
+
 
 # Convierte signos de puntuación en símbolos de pausas.
 
 ##
-ene_de_fonemas = len(transcripcion_final_c)
-set_transcrip_c = set(transcripcion_final_c)
-ene_de_fonemas_dif = len(set_transcrip_c)
+
 
 # Se ponen las pausas
 b_paso_coma = transc_ipa_con_espacios.replace(",","|")
