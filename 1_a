@@ -1,6 +1,7 @@
 # Se ponen las pausas
 # en la transcripción con espacios
 # primero dos signos seguidos
+
 s_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","‖")
 s_e_paso_pcoma_inte = s_e_paso_coma_inte.replace("; ¿","‖")
 s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","‖")
@@ -19,7 +20,22 @@ s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖ ")
 s_e_paso_excla1 = s_e_paso_preg2.replace("¡","| ")
 s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
 s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
-s_e_transcripcion_final_ipa_pausas = s_e_paso_parent1.replace(")","|")
+
+# signos individuales
+s_e_paso_coma = s_e_paso_parent1.replace(",","|")
+s_e_paso_punto = s_e_paso_coma.replace(".","‖")
+s_e_paso_pcoma = s_e_aso_punto.replace(";","‖")
+s_e_paso_2punt = s_e_paso_pcoma.replace(":","|")
+s_e_paso_3punt = s_e_paso_2punt.replace("…","|")
+s_e_paso_3punts = s_e_paso_3punt.replace("...","|")
+s_e_paso_guion = s_e_paso_3punts.replace("-","|")
+s_e_paso_preg1 = s_e_paso_guion.replace("¿","|")
+s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖")
+s_e_paso_excla1 = s_e_paso_preg2.replace("¡","|")
+s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖")
+s_e_paso_parent1 = s_e_paso_excla2.replace("(","|")
+s_e_paso_parent2 = s_e_paso_parent1.replace(")","|")
+s_e_transcripcion_final_ipa_pausas = s_e_paso_parent2.replace(")","|")
 
 
 ##### ================ ################################
@@ -29,19 +45,6 @@ s_e_transcripcion_final_ipa_pausas = s_e_paso_parent1.replace(")","|")
 transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
 
 # Convierte signos de puntuación en símbolos de pausas.
-a_paso_coma = transcripcion_final_c.replace(",","|")
-a_paso_punto = a_paso_coma.replace(".","‖")
-a_paso_pcoma = a_paso_punto.replace(";","‖")
-a_paso_2punt = a_paso_pcoma.replace(":","|")
-a_paso_3punt = a_paso_2punt.replace("…","|")
-a_paso_3punts = a_paso_3punt.replace("...","|")
-a_paso_guion = a_paso_3punts.replace("-","|")
-a_paso_preg1 = a_paso_guion.replace("¿","|")
-a_paso_preg2 = a_paso_preg1.replace("?","‖")
-a_paso_excla1 = a_paso_preg2.replace("¡","|")
-a_paso_excla2 = a_paso_excla1.replace("!","‖")
-a_paso_parent1 = a_paso_excla2.replace("(","|")
-a_paso_parent2 = a_paso_parent1.replace(")","|")
 
 ##
 ene_de_fonemas = len(transcripcion_final_c)
