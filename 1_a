@@ -1,25 +1,28 @@
 # Se ponen las pausas
 # en la transcripción con espacios
-# primero signos seguidos
-s_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","|")
-s_e_paso_pcoma_inte = s_e_paso_coma_inte("; ¿","|")
-s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","|")
-s_e_paso_p_inte = s_e_paso_pcoma_inte.replace(". ¿","|")
+# primero dos signos seguidos
+s_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","‖")
+s_e_paso_pcoma_inte = s_e_paso_coma_inte.replace("; ¿","‖")
+s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","‖")
+s_e_paso_coma_excl = s_e_paso_pcoma_inte.replace(", ¡","‖")
+s_e_paso_pcoma_excl = s_e_paso_coma_excl.replace("; ¡","‖")
+s_e_paso_p_excla = s_e_paso_pcoma_excl.replace(". ¡","‖")
+s_e_paso_coma = s_e_paso_p_excla.replace(",","|")
+s_e_paso_punto = s_e_paso_coma.replace(".","‖ ")
+s_e_paso_pcoma = s_e_paso_punto.replace(";","‖ ")
+s_e_paso_2punt = s_e_paso_pcoma.replace(":","| ")
+s_e_paso_3punt = s_e_paso_2punt.replace("…","| ")
+s_e_paso_3punts = s_e_paso_3punt.replace("...","| ")
+s_e_paso_guion = s_e_paso_3punts.replace("-","| ")
+s_e_paso_preg1 = s_e_paso_guion.replace("¿","|")
+s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖ ")
+s_e_paso_excla1 = s_e_paso_preg2.replace("¡","| ")
+s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
+s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
+s_e_transcripcion_final_ipa_pausas = s_e_paso_parent1.replace(")","|")
 
 
-paso_coma = transc_ipa_con_espacios.replace(",","|")
-paso_punto = paso_coma.replace(".","‖ ")
-paso_pcoma = paso_punto.replace(";","‖ ")
-paso_2punt = paso_pcoma.replace(":","| ")
-paso_3punt = paso_2punt.replace("…","| ")
-paso_3punts = paso_3punt.replace("...","| ")
-paso_guion = paso_3punts.replace("-","| ")
-paso_preg1 = paso_guion.replace("¿","|")
-paso_preg2 = paso_preg1.replace("?","‖ ")
-paso_excla1 = paso_preg2.replace("¡","| ")
-paso_excla2 = paso_excla1.replace("!","‖ ")
-paso_parent1 = paso_excla2.replace("(","| ")
-transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
+##### ================ ################################
 
 # El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
 # El objeto -transcripcion_final_c- es útil para cómputos y conversiones
