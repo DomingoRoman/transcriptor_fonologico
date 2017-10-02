@@ -1,5 +1,13 @@
 # Se ponen las pausas
-paso_coma = transc_ipa_sin_espacios.replace(",","|")
+# en la transcripción con espacios
+# primero signos seguidos
+s_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","|")
+s_e_paso_pcoma_inte = s_e_paso_coma_inte("; ¿","|")
+s_e_paso_pcoma_inte = s_e_paso_pcoma_inte.replace(". ¿","|")
+s_e_paso_p_inte = s_e_paso_pcoma_inte.replace(". ¿","|")
+
+
+paso_coma = transc_ipa_con_espacios.replace(",","|")
 paso_punto = paso_coma.replace(".","‖ ")
 paso_pcoma = paso_punto.replace(";","‖ ")
 paso_2punt = paso_pcoma.replace(":","| ")
