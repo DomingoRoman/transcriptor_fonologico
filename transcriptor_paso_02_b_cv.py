@@ -73,17 +73,6 @@ s_e_paso_c14 = s_e_paso_c13.replace("t","c")
 s_e_paso_c15 = s_e_paso_c14.replace("ʝ","c")
 s_e_paso_c16 = s_e_paso_c15.replace("I","v")
 s_e_paso_c17 = s_e_paso_c16.replace("U","v")
-s_e_estructura_silabica_palabras = s_e_paso_c17.replace("r","c")
-
-estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
-
-print(transcripcion_final_ipa_pausas)
-print(transcripcion_final_c)
-print(estructura_silabica_palabras)
-print(estructura_silabica_cadena)
+s_e_estructura_silabica_cadena = s_e_paso_c17.replace("r","c")
 
 
-
-
-
-# Estas son las dos series cv cv cv sobre las cuales se hará la separación silábica
