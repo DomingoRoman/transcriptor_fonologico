@@ -9,8 +9,8 @@
 # Punto de partida:::: s_e_transcripcion_final_ipa_pausas
 
 ## Estructuras silábicas con triptongos
-s_e_paso_tript_uai = s_e_transcripcion_final_ipa_pausas.replace("uai", "0v0")
-s_e_paso_tript_iai = s_e_paso_tript_uai.replace("iai", "0v0")
+se_inicio_sep_silab = contar_fonemas_06.replace("uai", "0v0")
+s_e_paso_tript_iai = se_inicio_sep_silab.replace("iai", "0v0")
 s_e_paso_tript_iei = s_e_paso_tript_iai.replace("iei", "0v0")
 s_e_paso_tript_uau = s_e_paso_tript_iei.replace("uau", "0v0")
 s_e_paso_tript_iau = s_e_paso_tript_uau.replace("iau", "0v0")
@@ -73,14 +73,7 @@ s_e_paso_c14 = s_e_paso_c13.replace("t","c")
 s_e_paso_c15 = s_e_paso_c14.replace("ʝ","c")
 s_e_paso_c16 = s_e_paso_c15.replace("I","v")
 s_e_paso_c17 = s_e_paso_c16.replace("U","v")
-
-s_e_estructura_silabica_palabras = paso_c17.replace("r","c")
-
-transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("I", "i")
-transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("U", "u")
-
-transcripcion_final_c = transcripcion_final_c.replace("I", "i")
-transcripcion_final_c = transcripcion_final_c.replace("U", "u")
+s_e_estructura_silabica_palabras = s_e_paso_c17.replace("r","c")
 
 estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
 
