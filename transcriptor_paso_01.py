@@ -151,22 +151,3 @@ transcripcion_final_ipa = paso_h.replace("ü", "u")
 # Elimina espacios en blanco para contar fonemas
 transc_ipa_sin_espacios = transcripcion_final_ipa.replace(" ", "")
 transc_ipa_con_espacios = transcripcion_final_ipa
-
-# Se ponen las pausas
-paso_coma = transc_ipa_sin_espacios.replace(",","|")
-paso_punto = paso_coma.replace(".","‖ ")
-paso_pcoma = paso_punto.replace(";","‖ ")
-paso_2punt = paso_pcoma.replace(":","| ")
-paso_3punt = paso_2punt.replace("…","| ")
-paso_3punts = paso_3punt.replace("...","| ")
-paso_guion = paso_3punts.replace("-","| ")
-paso_preg1 = paso_guion.replace("¿","|")
-paso_preg2 = paso_preg1.replace("?","‖ ")
-paso_excla1 = paso_preg2.replace("¡","| ")
-paso_excla2 = paso_excla1.replace("!","‖ ")
-paso_parent1 = paso_excla2.replace("(","| ")
-transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
-
-# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
-# El objeto -transcripcion_final_c- es útil para cómputos y conversiones
-transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
