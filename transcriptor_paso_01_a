@@ -1,7 +1,7 @@
 # Se ponen las pausas en la transcripción 1) con espacios y 2) en la sin espacios
 
 # 1. Transcripción sin espacios
-# primero dos signos seguidos
+# A. 2 signos seguidos
 
 s_e_paso_coma_inte = transc_ipa_sin_espacios.replace(", ¿","‖ ")
 s_e_paso_pcoma_inte = s_e_paso_coma_inte.replace("; ¿","‖ ")
@@ -22,7 +22,7 @@ s_e_paso_excla1 = s_e_paso_preg2.replace("¡","| ")
 s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
 s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
 
-# signos individuales
+# B. signos individuales
 s_e_paso_coma = s_e_paso_parent1.replace(",","| ")
 s_e_paso_punto = s_e_paso_coma.replace(".","‖ ")
 s_e_paso_pcoma = s_e_paso_punto.replace(";","‖ ")
@@ -39,6 +39,7 @@ s_e_paso_parent2 = s_e_paso_parent1.replace(")","| ")
 s_e_transcripcion_final_ipa_pausas = s_e_paso_parent2.replace(")","| ")
 
 # 2. Transcripción con espacios   ################################
+# A. Dos signos seguidos
 c_e_paso_coma_inte = transc_ipa_con_espacios.replace(", ¿","‖ ")
 c_e_paso_pcoma_inte = c_e_paso_coma_inte.replace("; ¿","‖ ")
 c_e_paso_pcoma_inte = c_e_paso_pcoma_inte.replace(". ¿","‖ ")
@@ -57,7 +58,7 @@ c_e_paso_preg2 = c_e_paso_preg1.replace("?","‖ ")
 c_e_paso_excla1 = c_e_paso_preg2.replace("¡","| ")
 c_e_paso_excla2 = c_e_paso_excla1.replace("!","‖ ")
 c_e_paso_parent1 = c_e_paso_excla2.replace("(","| ")
-# signos individuales
+# B. signos individuales
 c_e_paso_coma = c_e_paso_parent1.replace(",","| ")
 c_e_paso_punto = c_e_paso_coma.replace(".","‖ ")
 c_e_paso_pcoma = c_e_paso_punto.replace(";","‖ ")
