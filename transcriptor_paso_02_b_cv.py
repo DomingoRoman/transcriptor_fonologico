@@ -75,5 +75,5 @@ s_e_paso_c16 = s_e_paso_c15.replace("I","v")
 s_e_paso_c17 = s_e_paso_c16.replace("U","v")
 s_e_estructura_silabica_cadena = s_e_paso_c17.replace("r","c")
 
-n_voc =count("v", s_e_estructura_silabica_cadena)
+n_voc = s_e_estructura_silabica_cadena.count("v")
 print(n_voc)
