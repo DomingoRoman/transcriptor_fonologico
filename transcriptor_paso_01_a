@@ -21,6 +21,7 @@ s_e_paso_preg2 = s_e_paso_preg1.replace("?","‖ ")
 s_e_paso_excla1 = s_e_paso_preg2.replace("¡","| ")
 s_e_paso_excla2 = s_e_paso_excla1.replace("!","‖ ")
 s_e_paso_parent1 = s_e_paso_excla2.replace("(","| ")
+s_e_paso_excl_inte1 = s_e_paso_parent1.replace("! ¿", "‖ ")
 
 # B. signos individuales
 s_e_paso_coma = s_e_paso_parent1.replace(",","| ")
@@ -58,6 +59,7 @@ c_e_paso_preg2 = c_e_paso_preg1.replace("?","‖ ")
 c_e_paso_excla1 = c_e_paso_preg2.replace("¡","| ")
 c_e_paso_excla2 = c_e_paso_excla1.replace("!","‖ ")
 c_e_paso_parent1 = c_e_paso_excla2.replace("(","| ")
+c_e_paso_excl_inte1 = c_e_paso_parent1.replace("! ¿", "‖ ")
 # B. signos individuales
 c_e_paso_coma = c_e_paso_parent1.replace(",","| ")
 c_e_paso_punto = c_e_paso_coma.replace(".","‖ ")
