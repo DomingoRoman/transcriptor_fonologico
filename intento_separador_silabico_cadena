@@ -1,0 +1,25 @@
+# separar por cada grupo fónico
+#
+# para cada grupo fónico
+
+# cadena anterior   split("dos separadores"=
+#     
+
+#     medir longitud
+#     si los dos 1os caracteres de la cadena son "vv"
+#     segmentar "v" y todo lo demás
+
+# Hay que eliminar la última pausa
+
+# s_e_estructura_silabica_cadena = "cvcvcvcv ‖ cvcvcv | cvcvcvcv"
+
+grupos_fonicos_a = s_e_estructura_silabica_cadena.split("‖")
+
+n_g_fonicos_largos = len(g_fonicos)
+
+print(g_fonicos)
+print(n_g_fonicos_largos)
+
+for i in range(n_g_fonicos_largos):
+    print(grupos_fonicos_a)
+    print(i)
