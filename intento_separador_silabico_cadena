@@ -1,25 +1,27 @@
-# separar por cada grupo fónico
+# separar por cada grupo fónico mayor (a)
+# cada grupo a separarlo en grupos menores (b)
 #
-# para cada grupo fónico
-
-# cadena anterior   split("dos separadores"=
-#     
-
+# para cada grupo fónico b
 #     medir longitud
-#     si los dos 1os caracteres de la cadena son "vv"
-#     segmentar "v" y todo lo demás
-
+#     comando for desde inicio hasta el final...
+#         si los dos 1os caracteres de la cadena son "vv"
+#         segmentar "v" y todo lo demás
+#
 # Hay que eliminar la última pausa
 
 # s_e_estructura_silabica_cadena = "cvcvcvcv ‖ cvcvcv | cvcvcvcv"
 
+# Se obtienen los grupos fónicos mayores, es decir, separados por pausas largas.
+
 grupos_fonicos_a = s_e_estructura_silabica_cadena.split("‖")
 
-n_g_fonicos_largos = len(g_fonicos)
+n_g_fonicos_largos = len(grupos_fonicos_a)
 
-print(g_fonicos)
+print(grupos_fonicos_a)
 print(n_g_fonicos_largos)
 
 for i in range(n_g_fonicos_largos):
-    print(grupos_fonicos_a)
-    print(i)
+    print(grupos_fonicos_a[i])
+    n_voc_gf = grupos_fonicos_a[i].count("v")
+    print(n_voc_gf)
+    
