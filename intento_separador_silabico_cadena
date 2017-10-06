@@ -13,6 +13,8 @@
 
 # Se obtienen los grupos fónicos mayores, es decir, separados por pausas largas.
 
+s_e_estructura_silabica_cadena = "cvcvcvcv ‖ cvcvcv | cvcvc ‖  vcv| cvccvcvvcv"
+
 grupos_fonicos_a = s_e_estructura_silabica_cadena.split("‖")
 
 n_g_fonicos_largos = len(grupos_fonicos_a)
@@ -26,4 +28,3 @@ for i in range(n_g_fonicos_largos):
 #    print(grupos_fonicos_b)
     for grupo_menor in grupos_fonicos_b:
         print(grupo_menor)
-        
