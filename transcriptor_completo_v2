@@ -1,0 +1,294 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  # transcriptor_fonologico
+#  
+#  Copyright 2017 Laboratorio de Fonética USACH
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#
+#  Este programa realiza una transcripción fonológica a partir de
+#     un texto escrito.
+
+#    1. Una entrada literal -------------> una transcripción fonológica
+#        una transcripción usa el símbolo t∫ para "che". la otra usa "c"
+#        para tener una transcripción de "che" con un solo símbolo.
+#
+#    2. una transcripción fonológica ----> una secuenca cvcv cvcv cvcvc
+#
+#    3. una secuencia cvcv cvcv cvcvc ---> separada por sílabas
+#       para cada palabra:  cv cv / cv cv / cv cvc     
+#
+from collections import defaultdict
+from collections import Counter
+
+palabra = input('escribe unas palabras:   ')
+
+fonema = input('¿de qué fonema quieres saber el número de ocurrencias?')
+
+lista_palabras = palabra.split(" ")
+
+# Agrega un espacio al final para evitar que AY > ay
+espacio_poste = " "
+palabra = palabra + espacio_poste
+
+# Separación por palabras
+
+# Número de palabras de toda la cadena
+n_palabras=len(lista_palabras)
+
+# poner todo en minúsculas
+palabra = palabra.lower()
+
+# Elimina acentos
+paso_a = palabra.replace("á", "a")
+paso_e = paso_a.replace("é", "e")
+paso_i = paso_e.replace("í", "I")
+paso_o = paso_i.replace("ó", "o")
+paso_u = paso_o.replace("ú", "U")
+
+# sustituye V por B
+paso_b = paso_u.replace("v", "b")
+
+# sustituye C por S
+paso_ce = paso_b.replace("ce", "se")
+paso_ci = paso_ce.replace("ci", "si")
+
+# sustituye C por K
+paso_ca =paso_ci.replace("ca", "ka")
+paso_co =paso_ca.replace("co", "ko")
+paso_cu =paso_co.replace("cu", "ku")
+
+# sustituye CH por 
+paso_ch = paso_cu.replace("ch", "t͡∫")
+
+# sustituye la X
+paso_xks = paso_ch.replace(" x", "s")
+paso_x_vxv= paso_xks.replace("x","ks")
+paso_cuate= paso_x_vxv.replace("meksi","mexi")
+
+# sustituye GE, GI, J por X
+paso_x = paso_cuate.replace("j", "x")
+paso_xe = paso_x.replace("ge", "xe")
+paso_xi = paso_xe.replace("gi", "xi")
+
+# sustituye diptongos finales con y
+paso_oi = paso_xi.replace("oy ", "oi ")
+paso_ei = paso_oi.replace("ey ", "ei ")
+paso_ui = paso_ei.replace("uy ", "ui ")
+paso_ai = paso_ui.replace("ay ", "ai ")
+
+paso_ay = paso_ai.replace("ay", "aʝ")
+paso_ey = paso_ay.replace("ey", "eʝ")
+paso_oy = paso_ey.replace("oy", "oʝ")
+paso_uy = paso_oy.replace("uy", "uʝ")
+paso_iy = paso_uy.replace("iy", "iʝ")
+
+paso_ya = paso_iy.replace("ya", "ʝa")
+paso_ye = paso_ya.replace("ye", "ʝi")
+paso_yi = paso_ye.replace("yi", "ʝi")
+paso_yo = paso_yi.replace("yo", "ʝo")
+paso_yu = paso_yo.replace("yu", "ʝu")
+
+paso_ny = paso_yu.replace("ny", "nʝ")
+
+paso_y2 = paso_ny.replace("y", "i")
+
+# sustituye LL por Y
+paso_y = paso_y2.replace("ll", "ʝ")
+
+# sustituye QU por K
+paso_k = paso_y.replace("qu", "k")
+
+# sustituye Z por S
+paso_z = paso_k.replace("z", "s")
+
+# sustituye GUE/I por GE/I
+paso_ge = paso_z.replace("gue","ge")
+paso_gi = paso_ge.replace("gui","gi")
+
+# sustituye ERRES (1)
+paso_rr1 = paso_gi.replace("rr","00")
+
+# sustituye casos de ERE
+paso_r1 = paso_rr1.replace("ar","aɾ")
+paso_r2 = paso_r1.replace("er","eɾ")
+paso_r3 = paso_r2.replace("ir","iɾ")
+paso_r4 = paso_r3.replace("or","oɾ")
+paso_r5 = paso_r4.replace("ur","uɾ")
+paso_r6 = paso_r5.replace("gr","gɾ")
+paso_r7 = paso_r6.replace("br","bɾ")
+paso_r8 = paso_r7.replace("pr","pɾ")
+paso_r9 = paso_r8.replace("tr","tɾ")
+paso_r10 = paso_r9.replace("dr","dɾ")
+paso_r11 = paso_r10.replace("fr","fɾ")
+paso_r12 = paso_r11.replace("cr","kɾ")
+paso_r13 = paso_r12.replace("cl", "kl")
+
+# sustituye ERRES (2)
+paso_rr2 = paso_r13.replace("00","r")
+
+# sustituye EÑE
+paso_ñ = paso_rr2.replace("ñ","ɲ")
+
+# Borra H y otros caracteres como ", ; :" etc.
+paso_h = paso_ñ.replace("h","")
+
+# Escribe Ü como u
+transcripcion_final_ipa = paso_h.replace("ü", "u")
+
+# Elimina espacios en blanco para contar fonemas
+transc_ipa_sin_espacios = transcripcion_final_ipa.replace(" ", "")
+transc_ipa_con_espacios = transcripcion_final_ipa
+
+# Se ponen las pausas
+paso_coma = transc_ipa_sin_espacios.replace(",","|")
+paso_punto = paso_coma.replace(".","‖ ")
+paso_pcoma = paso_punto.replace(";","‖ ")
+paso_2punt = paso_pcoma.replace(":","| ")
+paso_3punt = paso_2punt.replace("…","| ")
+paso_3punts = paso_3punt.replace("...","| ")
+paso_guion = paso_3punts.replace("-","| ")
+paso_preg1 = paso_guion.replace("¿","|")
+paso_preg2 = paso_preg1.replace("?","‖ ")
+paso_excla1 = paso_preg2.replace("¡","| ")
+paso_excla2 = paso_excla1.replace("!","‖ ")
+paso_parent1 = paso_excla2.replace("(","| ")
+transcripcion_final_ipa_pausas = paso_parent1.replace(")","|")
+
+
+# El siguiente paso cambia "t͡∫" por "c" para efectos de contar los fonemas
+# El objeto -transcripcion_final_c- es útil para cómputos y conversiones
+transcripcion_final_c = transcripcion_final_ipa_pausas.replace("t͡∫","c")
+
+# Convierte signos de puntuación en símbolos de pausas.
+a_paso_coma = transcripcion_final_c.replace(",","|")
+a_paso_punto = a_paso_coma.replace(".","‖")
+a_paso_pcoma = a_paso_punto.replace(";","‖")
+a_paso_2punt = a_paso_pcoma.replace(":","|")
+a_paso_3punt = a_paso_2punt.replace("…","|")
+a_paso_3punts = a_paso_3punt.replace("...","|")
+a_paso_guion = a_paso_3punts.replace("-","|")
+a_paso_preg1 = a_paso_guion.replace("¿","|")
+a_paso_preg2 = a_paso_preg1.replace("?","‖")
+a_paso_excla1 = a_paso_preg2.replace("¡","|")
+a_paso_excla2 = a_paso_excla1.replace("!","‖")
+a_paso_parent1 = a_paso_excla2.replace("(","|")
+a_paso_parent2 = a_paso_parent1.replace(")","|")
+
+##
+ene_de_fonemas = len(transcripcion_final_c)
+set_transcrip_c = set(transcripcion_final_c)
+ene_de_fonemas_dif = len(set_transcrip_c)
+
+print(transcripcion_final_ipa_pausas)
+print(ene_de_fonemas, ene_de_fonemas_dif)
+
+
+
+
+## --- PASO 2---
+######################
+####. Las I y las U se convierten en "v".
+####  0 = semivocal o semiconsonante
+####  1 = líquida combinada
+####
+## Estructuras silábicas con triptongos
+paso_tript_uai = transcripcion_final_c.replace("uai", "0v0")
+paso_tript_iai = paso_tript_uai.replace("iai", "0v0")
+paso_tript_iei = paso_tript_iai.replace("iei", "0v0")
+paso_tript_uau = paso_tript_iei.replace("uau", "0v0")
+paso_tript_iau = paso_tript_uau.replace("iau", "0v0")
+paso_tript_uei = paso_tript_iau.replace("uei", "0v0")
+
+## Estructuras silábicas con diptongos
+paso_dipt_ui = paso_tript_uei.replace("ui", "v0")
+paso_dipt_iu = paso_dipt_ui.replace("iu", "v0")
+paso_dipt_ai = paso_dipt_iu.replace("ai", "v0")
+paso_dipt_ei = paso_dipt_ai.replace("ei", "v0")
+paso_dipt_oi = paso_dipt_ei.replace("ei", "v0")
+paso_dipt_au = paso_dipt_oi.replace("au", "v0")
+paso_dipt_eu = paso_dipt_au.replace("eu", "v0")
+paso_dipt_ia = paso_dipt_eu.replace("ia", "0v")
+paso_dipt_ie = paso_dipt_ia.replace("ie", "0v")
+paso_dipt_io = paso_dipt_ie.replace("io", "0v")
+paso_dipt_oi = paso_dipt_io.replace("oi", "v0")
+paso_dipt_ou = paso_dipt_oi.replace("ou", "v0")
+paso_dipt_ue = paso_dipt_ou.replace("ue", "0v")
+paso_dipt_uo = paso_dipt_ue.replace("uo", "0v")
+paso_dipt_ua = paso_dipt_uo.replace("ua", "0v")
+
+## VOCALES a "V"
+paso_c0va = paso_dipt_ua.replace("a","v")
+paso_c0ve = paso_c0va.replace("e","v")
+paso_c0vi = paso_c0ve.replace("i","v")
+paso_c0vo = paso_c0vi.replace("o","v")
+paso_c0vu = paso_c0vo.replace("u","v")
+
+# LÍQUIDAS
+paso_liq_01 = paso_c0vu.replace("bɾ","c1")
+paso_liq_02 = paso_liq_01.replace("bl","c1")
+paso_liq_03 = paso_liq_02.replace("kɾ","c1")
+paso_liq_04 = paso_liq_03.replace("kl","c1")
+paso_liq_05 = paso_liq_04.replace("dɾ","c1")
+paso_liq_06 = paso_liq_05.replace("fɾ","c1")
+paso_liq_07 = paso_liq_06.replace("fl","c1")
+paso_liq_08 = paso_liq_07.replace("gɾ","c1")
+paso_liq_09 = paso_liq_08.replace("gl","c1")
+paso_liq_10 = paso_liq_09.replace("pl","c1")
+paso_liq_11 = paso_liq_10.replace("pɾ","c1")
+paso_liq_12 = paso_liq_11.replace("tɾ","c1")
+paso_liq_13 = paso_liq_12.replace("tl","c1")
+
+# sustituye consonantes por C
+paso_c01 = paso_liq_13.replace("b","c")
+paso_c02 = paso_c01.replace("d","c")
+paso_c03 = paso_c02.replace("f","c")
+paso_c04 = paso_c03.replace("g","c")
+paso_c05 = paso_c04.replace("x","c")
+paso_c06 = paso_c05.replace("k","c")
+paso_c07 = paso_c06.replace("l","c")
+paso_c08 = paso_c07.replace("m","c")
+paso_c09 = paso_c08.replace("n","c")
+paso_c10 = paso_c09.replace("ɲ","c")
+paso_c11 = paso_c10.replace("p","c")
+paso_c12 = paso_c11.replace("ɾ","c")
+paso_c13 = paso_c12.replace("s","c")
+paso_c14 = paso_c13.replace("t","c")
+paso_c15 = paso_c14.replace("ʝ","c")
+paso_c16 = paso_c15.replace("I","v")
+paso_c17 = paso_c16.replace("U","v")
+
+estructura_silabica_palabras = paso_c17.replace("r","c")
+
+transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("I", "i")
+transcripcion_final_ipa_pausas = transcripcion_final_ipa_pausas.replace("U", "u")
+
+transcripcion_final_c = transcripcion_final_c.replace("I", "i")
+transcripcion_final_c = transcripcion_final_c.replace("U", "u")
+
+estructura_silabica_cadena = estructura_silabica_palabras.replace(" ","")
+
+# Contar el elemento solicitado
+
+n_de_elemento = transcripcion_final_c.count(fonema)
+
+print(transcripcion_final_ipa_pausas)
+print(transcripcion_final_c)
+print(transc_ipa_con_espacios)
+print(estructura_silabica_palabras)
+print(estructura_silabica_cadena)
+print(n_de_elemento)
